@@ -1,0 +1,61 @@
+{
+    "packages": [
+        {
+            "name": "smithfield-studio/acf-svg-icon-picker",
+            "version": "3.1.2",
+            "version_normalized": "3.1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smithfield-studio/acf-svg-icon-picker.git",
+                "reference": "c2f4de9199786465059ba740e7da12d9ff6d2b5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smithfield-studio/acf-svg-icon-picker/zipball/c2f4de9199786465059ba740e7da12d9ff6d2b5e",
+                "reference": "c2f4de9199786465059ba740e7da12d9ff6d2b5e",
+                "shasum": ""
+            },
+            "require-dev": {
+                "10up/phpcs-composer": "^3.0",
+                "phpcompatibility/php-compatibility": "^9",
+                "wp-coding-standards/wpcs": "^3.1"
+            },
+            "time": "2024-06-06T08:54:55+00:00",
+            "type": "wordpress-plugin",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Sheppard"
+                },
+                {
+                    "name": "Erik van der Bas",
+                    "email": "erik@basedonline.nl",
+                    "homepage": "https://basedonline.nl"
+                },
+                {
+                    "name": "houke"
+                }
+            ],
+            "description": "Add ACF field for selecting SVG icons.",
+            "keywords": [
+                "acf",
+                "field",
+                "icon",
+                "picker",
+                "svg",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/smithfield-studio/acf-svg-icon-picker/issues",
+                "source": "https://github.com/smithfield-studio/acf-svg-icon-picker"
+            },
+            "install-path": "../smithfield-studio/acf-svg-icon-picker"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

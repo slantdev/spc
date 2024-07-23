@@ -2,11 +2,11 @@
 
 function spc_acf_init()
 {
-  if (function_exists('get_field')) {
-    if (defined('GOOGLE_MAPS_API')) {
-      acf_update_setting('google_api_key', GOOGLE_MAPS_API);
-    }
-  }
+  // if (function_exists('get_field')) {
+  //   if (defined('GOOGLE_MAPS_API')) {
+  //     acf_update_setting('google_api_key', GOOGLE_MAPS_API);
+  //   }
+  // }
 
   // Disable ACFE Modules
   acf_update_setting('acfe/modules/options', false);
