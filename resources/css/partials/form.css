@@ -1,0 +1,19 @@
+[type="text"],
+input:where(:not([type])),
+[type="email"],
+[type="url"],
+[type="password"],
+[type="number"],
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="week"],
+[multiple],
+textarea,
+select {
+  @apply text-gray-700 bg-white border-[#BFC3C8] rounded-sm w-full text-base py-3 px-4 shadow-inner box-border outline-none;
+  /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; */
+}

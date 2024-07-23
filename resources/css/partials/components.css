@@ -1,0 +1,120 @@
+.alignwide {
+  @apply mx-auto;
+}
+/* Breadcrumbs */
+.breadcrumbs {
+  color: var(--breadcrumbs-text-color, #020044);
+  span {
+    @apply inline;
+  }
+  a {
+    @apply hover:underline;
+  }
+  .separator {
+    color: var(--breadcrumbs-separator-color, #ff6347);
+    @apply inline-block translate-y-px text-xl leading-none px-1;
+  }
+}
+
+.swiper-button-lock {
+  @apply !hidden;
+}
+
+.with_frm_style {
+  .frm_inside_container {
+    > label {
+    }
+  }
+}
+
+/* Posts Pagination */
+.posts-pagination,
+.ajax-pagination {
+  > ul {
+    @apply flex items-center justify-center xl:justify-end gap-x-1;
+    > li {
+      @apply p-2 flex w-10 h-10 justify-center items-center rounded-full cursor-pointer hover:text-brand-dark-blue;
+      &:hover {
+        color: var(--section-link-color);
+      }
+      &.inactive {
+        @apply opacity-50 cursor-not-allowed;
+      }
+      &.selected {
+        @apply bg-brand-dark-blue text-white;
+        background-color: var(--section-link-color);
+      }
+      &:first-child,
+      &:last-child {
+        @apply tracking-[-0.2em];
+      }
+    }
+  }
+}
+.nav-links {
+  @apply flex items-center justify-center gap-x-1;
+  .page-numbers {
+    @apply p-2 flex w-10 h-10 justify-center items-center rounded-full cursor-pointer;
+    &.current {
+      @apply bg-brand-dark-blue text-white;
+      background-color: var(--section-link-color);
+    }
+    &.prev,
+    &.next {
+      @apply w-auto rounded-none;
+    }
+  }
+}
+
+/* Adopt Cats */
+.adopt-filter-icon {
+  @apply text-slate-500;
+}
+.adopt-filter-indicator {
+  .adopt-filter-inactive {
+    @apply block;
+  }
+  .adopt-filter-active {
+    @apply hidden;
+  }
+}
+.adopt-filter-clear {
+  @apply hidden;
+}
+.adopt-filter-btn {
+  &.active {
+    .adopt-filter-icon {
+      @apply text-brand-blue;
+    }
+    .adopt-filter-indicator {
+      .adopt-filter-inactive {
+        @apply hidden;
+      }
+      .adopt-filter-active {
+        @apply block;
+      }
+    }
+  }
+}
+.adopt-filter-container {
+  &.has_active {
+    .adopt-filter-clear {
+      @apply flex;
+    }
+  }
+}
+
+/* Give WP */
+.givewp-donation-form {
+  @apply p-0;
+}
+
+/* Fancybox */
+.fancybox__carousel {
+  &.has-thumbs {
+    @apply pb-[68px] md:pb-0;
+  }
+}
+.fancybox__slide::after {
+  @apply block m-0 md:m-auto;
+}
