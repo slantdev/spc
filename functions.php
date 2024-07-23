@@ -1,114 +1,25 @@
 <?php
 
-/**
- * Theme setup.
- */
-function spc_setup()
-{
-	add_theme_support('title-tag');
-
-	register_nav_menus(
-		array(
-			'primary' => __('Primary Menu', 'spc'),
-		)
-	);
-
-	add_theme_support(
-		'html5',
-		array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		)
-	);
-
-	add_theme_support('custom-logo');
-	add_theme_support('post-thumbnails');
-
-	add_theme_support('align-wide');
-	add_theme_support('wp-block-styles');
-
-	add_theme_support('editor-styles');
-	add_editor_style('css/editor-style.css');
-}
-
-add_action('after_setup_theme', 'spc_setup');
+define('GOOGLE_MAPS_API', 'AIzaSyALa7CVVKAaAPSw9-zopXMh2C7wcn6Zo10');
 
 /**
- * Enqueue theme assets.
+ * REQUIRED FILES
+ * Include required files.
  */
-function spc_enqueue_scripts()
-{
-	$theme = wp_get_theme();
-
-	wp_enqueue_style('spc', spc_asset('css/app.css'), array(), $theme->get('Version'));
-	wp_enqueue_script('spc', spc_asset('js/app.js'), array(), $theme->get('Version'));
-}
-
-add_action('wp_enqueue_scripts', 'spc_enqueue_scripts');
+require get_template_directory() . '/inc/theme-setup.php';
+require get_template_directory() . '/inc/helpers.php';
+require get_template_directory() . '/inc/acf.php';
+require get_template_directory() . '/inc/enqueue.php';
+require get_template_directory() . '/inc/ajax.php';
+require get_template_directory() . '/inc/woocommerce.php';
 
 /**
- * Get asset path.
- *
- * @param string  $path Path to asset.
- *
- * @return string
+ * Disable Gutenberg
  */
-function spc_asset($path)
+add_filter('use_block_editor_for_post_type', 'prefix_disable_gutenberg', 10, 2);
+function prefix_disable_gutenberg($current_status, $post_type)
 {
-	if (wp_get_environment_type() === 'production') {
-		return get_stylesheet_directory_uri() . '/' . $path;
-	}
-
-	return add_query_arg('time', time(),  get_stylesheet_directory_uri() . '/' . $path);
+	// Use your post type key instead of 'product'
+	if ($post_type === 'post' || $post_type === 'page' || $post_type === 'where-are-they' || $post_type === 'faq') return false;
+	return $current_status;
 }
-
-/**
- * Adds option 'li_class' to 'wp_nav_menu'.
- *
- * @param string  $classes String of classes.
- * @param mixed   $item The current item.
- * @param WP_Term $args Holds the nav menu arguments.
- *
- * @return array
- */
-function spc_nav_menu_add_li_class($classes, $item, $args, $depth)
-{
-	if (isset($args->li_class)) {
-		$classes[] = $args->li_class;
-	}
-
-	if (isset($args->{"li_class_$depth"})) {
-		$classes[] = $args->{"li_class_$depth"};
-	}
-
-	return $classes;
-}
-
-add_filter('nav_menu_css_class', 'spc_nav_menu_add_li_class', 10, 4);
-
-/**
- * Adds option 'submenu_class' to 'wp_nav_menu'.
- *
- * @param string  $classes String of classes.
- * @param mixed   $item The current item.
- * @param WP_Term $args Holds the nav menu arguments.
- *
- * @return array
- */
-function spc_nav_menu_add_submenu_class($classes, $args, $depth)
-{
-	if (isset($args->submenu_class)) {
-		$classes[] = $args->submenu_class;
-	}
-
-	if (isset($args->{"submenu_class_$depth"})) {
-		$classes[] = $args->{"submenu_class_$depth"};
-	}
-
-	return $classes;
-}
-
-add_filter('nav_menu_submenu_css_class', 'spc_nav_menu_add_submenu_class', 10, 3);

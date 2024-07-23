@@ -14,7 +14,7 @@ mix.webpackConfig({
   },
 });
 
-mix.js("resources/js/app.js", "js");
+mix.js("resources/js/app.js", "assets/js");
 
 mix.postCss("resources/css/app.css", "assets/css");
 mix.postCss("resources/css/editor-style.css", "assets/css");

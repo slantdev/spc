@@ -156,7 +156,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/js/app": 0,
+/******/ 			"/assets/js/app": 0,
 /******/ 			"assets/css/acf-layouts": 0,
 /******/ 			"assets/css/admin-style": 0,
 /******/ 			"assets/css/editor-style": 0,
