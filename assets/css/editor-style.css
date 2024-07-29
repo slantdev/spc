@@ -4127,6 +4127,14 @@ body {
     --tw-brightness: brightness(.9);
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
+.focus\:border-brand-light-blue:focus {
+    --tw-border-opacity: 1;
+    border-color: rgb(0 90 171 / var(--tw-border-opacity));
+}
+.focus\:ring-brand-light-blue:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(0 90 171 / var(--tw-ring-opacity));
+}
 .group:hover .group-hover\:scale-105 {
     --tw-scale-x: 1.05;
     --tw-scale-y: 1.05;

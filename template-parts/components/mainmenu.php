@@ -5,7 +5,7 @@ $menu_items = get_field('menu_items', 'option');
 ?>
 
 <div class="bg-white">
-  <div class="container max-w-screen-5xl">
+  <div class="container max-w-screen-2xl">
     <div class="main-nav--div grow">
       <div class="toolbar-wrapper hidden">
         <form id="header-searchform" class="relative" method="get" action="<?php echo esc_url(home_url('/')); ?>">

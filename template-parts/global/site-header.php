@@ -6,7 +6,7 @@ $top_links = $top_navigation['top_links'] ?? '';
 // $donate_button = $top_navigation['donate_button'] ?? '';
 ?>
 <div class="top-header hidden xl:block relative z-50 bg-brand-dark-blue py-3 print:hidden">
-  <div class="container max-w-screen-5xl">
+  <div class="container max-w-screen-2xl">
     <div class="flex items-center justify-end">
       <?php if ($top_links) : ?>
         <ul class="top-nav flex gap-x-6 text-sm 4xl:text-base leading-tight">
@@ -33,7 +33,7 @@ $site_logo = $header_logo['site_logo']['url'] ?? get_stylesheet_directory_uri() 
 ?>
 <header class="fixed z-50 w-full top-0 left-0 xl:static print:hidden">
   <div class="main-header bg-brand-medium-blue ">
-    <div class="container max-w-screen-5xl">
+    <div class="container max-w-screen-2xl">
       <div class="relative xl:flex xl:justify-between">
         <div class="flex justify-between items-center xl:justify-normal">
           <div class="site-logo py-3 xl:py-6">
@@ -51,12 +51,12 @@ $site_logo = $header_logo['site_logo']['url'] ?? get_stylesheet_directory_uri() 
         </div>
         <div class="flex items-start xl:justify-end py-3 xl:py-6">
           <div id="search-form-container">
-            <div class="px-4 py-4 flex items-center w-full h-full">
+            <div class="py-4 flex items-center w-full h-full">
               <div class="flex w-full gap-x-4 items-center">
                 <form id="header-searchform" class="relative grow" method="get" action="<?php echo esc_url(home_url('/')); ?>">
-                  <input id="header-searchform-input" type="text" class="w-full border-gray-300 shadow-inner !rounded-full bg-white !px-6 !py-2.5 2xl:!py-3 focus:border-brand-blue focus:ring-brand-blue" name="s" placeholder="Search" value="">
+                  <input id="header-searchform-input" type="text" class="w-full border-gray-300 shadow-inner !rounded-full bg-white !px-6 !py-2.5 2xl:!py-3 focus:border-brand-light-blue focus:ring-brand-light-blue" name="s" placeholder="Search" value="">
                   <button type="submit" class="absolute right-4 top-3">
-                    <?php echo spc_icon(array('icon' => 'search', 'group' => 'utilities', 'size' => '24', 'class' => 'text-brand-sea w-5 h-5 2xl:w-6 2xl:h-6')); ?>
+                    <?php echo spc_icon(array('icon' => 'search', 'group' => 'utilities', 'size' => '24', 'class' => 'w-5 h-5 2xl:w-6 2xl:h-6')); ?>
                   </button>
                 </form>
               </div>
