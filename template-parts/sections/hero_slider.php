@@ -90,12 +90,12 @@ $hero_slider_repeater = $hero_slider['hero_slider'] ?? '';
             crossFade: true
           },
           autoplay: {
-            delay: 5000,
+            delay: 8000,
           },
-          navigation: {
-            nextEl: '.section-hero .swiper-btn-next',
-            prevEl: '.section-hero .swiper-btn-prev',
-          },
+          // navigation: {
+          //   nextEl: '.section-hero .swiper-btn-next',
+          //   prevEl: '.section-hero .swiper-btn-prev',
+          // },
         });
       });
     </script>
