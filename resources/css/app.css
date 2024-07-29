@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 /* @import "partials/navigation.css"; */
-/* @import "partials/components.css"; */
+@import "partials/components.css";
 
 @media print {
   body {

@@ -75,6 +75,7 @@ if ($term_id) {
   $the_id = get_the_ID();
 }
 $disable_subscribe = get_field('disable_subscribe', $the_id);
+$disable_subscribe = true;
 
 ?>
 

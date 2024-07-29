@@ -114,7 +114,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "#020044",
+                            "default_value": "#ffffff",
                             "enable_opacity": 0,
                             "return_format": "string"
                         },
@@ -140,7 +140,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "#FF6347",
+                            "default_value": "#ffffff",
                             "enable_opacity": 0,
                             "return_format": "string"
                         }
@@ -237,105 +237,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "#020044",
-                            "enable_opacity": 0,
-                            "return_format": "string"
-                        }
-                    ]
-                },
-                {
-                    "key": "field_6602f3ca9d96c",
-                    "label": "Description",
-                    "name": "description",
-                    "aria-label": "",
-                    "type": "group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "label-hidden",
-                        "id": ""
-                    },
-                    "layout": "block",
-                    "acfe_seamless_style": 1,
-                    "acfe_group_modal": 0,
-                    "acfe_group_modal_close": 0,
-                    "acfe_group_modal_button": "",
-                    "acfe_group_modal_size": "large",
-                    "sub_fields": [
-                        {
-                            "key": "field_664b907537b3a",
-                            "label": "Show Description",
-                            "name": "show_description",
-                            "aria-label": "",
-                            "type": "true_false",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "25",
-                                "class": "",
-                                "id": ""
-                            },
-                            "message": "",
-                            "default_value": 0,
-                            "ui_on_text": "",
-                            "ui_off_text": "",
-                            "ui": 1
-                        },
-                        {
-                            "key": "field_6602f3ca9d96d",
-                            "label": "Description",
-                            "name": "description",
-                            "aria-label": "",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_664b907537b3a",
-                                        "operator": "==",
-                                        "value": "1"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "acfe_textarea_code": 0,
-                            "maxlength": "",
-                            "rows": 2,
-                            "placeholder": "",
-                            "new_lines": "br"
-                        },
-                        {
-                            "key": "field_6602f3ca9d96e",
-                            "label": "Description Color",
-                            "name": "description_color",
-                            "aria-label": "",
-                            "type": "color_picker",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_664b907537b3a",
-                                        "operator": "==",
-                                        "value": "1"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "25",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "#020044",
+                            "default_value": "#ffffff",
                             "enable_opacity": 0,
                             "return_format": "string"
                         }
@@ -543,102 +445,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "rgba(243,241,239,0.6)",
+                            "default_value": "rgba(0,0,0,0.6)",
                             "enable_opacity": 1,
                             "return_format": "string"
                         }
                     ]
-                },
-                {
-                    "key": "field_664b91aba5ed1",
-                    "label": "Salesforce Form",
-                    "name": "salesforce_form",
-                    "aria-label": "",
-                    "type": "group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "label-hidden",
-                        "id": ""
-                    },
-                    "layout": "block",
-                    "acfe_seamless_style": 1,
-                    "acfe_group_modal": 0,
-                    "acfe_group_modal_close": 0,
-                    "acfe_group_modal_button": "",
-                    "acfe_group_modal_size": "large",
-                    "sub_fields": [
-                        {
-                            "key": "field_664b91aba5ed2",
-                            "label": "Use Salesforce Form",
-                            "name": "use_salesforce_form",
-                            "aria-label": "",
-                            "type": "true_false",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "25",
-                                "class": "",
-                                "id": ""
-                            },
-                            "message": "",
-                            "default_value": 0,
-                            "ui_on_text": "",
-                            "ui_off_text": "",
-                            "ui": 1
-                        },
-                        {
-                            "key": "field_664b91aba5ed3",
-                            "label": "Form ID",
-                            "name": "form_id",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_664b91aba5ed2",
-                                        "operator": "==",
-                                        "value": "1"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "75",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        }
-                    ]
-                },
-                {
-                    "key": "field_6682176219b2a",
-                    "label": "Show Language Switcher",
-                    "name": "show_language_switcher",
-                    "aria-label": "",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "",
-                    "default_value": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": "",
-                    "ui": 1
                 }
             ]
         }
@@ -668,8 +479,8 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
+    "modified": 1722226666,
     "acfe_categories": {
         "layout": "Layout"
-    },
-    "modified": 1721870106
+    }
 }
