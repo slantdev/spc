@@ -65,7 +65,7 @@ $hero_slider_repeater = $hero_slider['hero_slider'] ?? '';
           </div>
         <?php endforeach ?>
       </div>
-      <div class="swiper-arrows-container absolute inset-0 hidden xl:block">
+      <div class="swiper-arrows-container absolute inset-0 hidden xl:hidden">
         <div class="container max-w-screen-2xl relative h-full">
           <button type="button" class="swiper-btn-prev absolute z-10 left-0 xl:-left-32 top-2 lg:top-1/2 -translate-y-1/2 w-9 h-9 xl:w-10 xl:h-10 flex items-center justify-center text-slate-300 hover:text-brand-blue transition-all duration-200">
             <?php echo spc_icon(array('icon' => 'chevron-left', 'group' => 'utilities', 'size' => '96', 'class' => 'w-10 h-10')); ?>
