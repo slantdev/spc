@@ -1,0 +1,187 @@
+{
+    "key": "group_64fbe0a73c890",
+    "title": "Site Settings - Color Palette",
+    "fields": [
+        {
+            "key": "field_64fbe0a75992b",
+            "label": "Primary Color",
+            "name": "primary_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#005AAB",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_64fbe0a759936",
+            "label": "Secondary Color",
+            "name": "secondary_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#2C4390",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_64fbe0a759940",
+            "label": "Tertiary Color",
+            "name": "tertiary_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#002253",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_659adfbd584d5",
+            "label": "Fourth Color",
+            "name": "fourth_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#00B0E8",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_66029afe2c832",
+            "label": "Fifth Color",
+            "name": "fifth_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#3077B7",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_64fc180256fff",
+            "label": "Body Text Color",
+            "name": "body_text_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#191919",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_64fc0d94d6040",
+            "label": "Additional Color",
+            "name": "additional_color",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_repeater_stylised_button": 1,
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Color",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64fc0dadd6041",
+                    "label": "Color",
+                    "name": "color",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 0,
+                    "return_format": "string",
+                    "parent_repeater": "field_64fc0d94d6040"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1721720788,
+    "acfe_categories": {
+        "site-settings": "Site Settings"
+    }
+}

@@ -9,7 +9,7 @@ require get_template_directory() . '/inc/helpers.php';
 require get_template_directory() . '/inc/acf.php';
 require get_template_directory() . '/inc/enqueue.php';
 require get_template_directory() . '/inc/ajax.php';
-require get_template_directory() . '/inc/woocommerce.php';
+//require get_template_directory() . '/inc/woocommerce.php';
 
 /**
  * Disable Gutenberg
@@ -21,3 +21,15 @@ function prefix_disable_gutenberg($current_status, $post_type)
 	if ($post_type === 'post' || $post_type === 'page' || $post_type === 'where-are-they' || $post_type === 'faq') return false;
 	return $current_status;
 }
+
+/**
+ * Remove Gutenberg Block Library CSS from loading on the frontend
+ */
+function spc_remove_wp_block_library_css()
+{
+	wp_dequeue_style('wp-block-library');
+	wp_dequeue_style('wp-block-library-theme');
+	wp_dequeue_style('wc-blocks-style'); // Remove WooCommerce block CSS
+	wp_dequeue_style('global-styles');
+}
+add_action('wp_enqueue_scripts', 'spc_remove_wp_block_library_css', 100);

@@ -37,7 +37,7 @@ body {
   height: initial;
 }
 #poststuff .acf-layout {
-  font-family: Poppins, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Montserrat, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .layout > .acfe-fc-placeholder > a {
   z-index: 30 !important;

@@ -19,7 +19,7 @@
     @apply static inline-flex justify-between;
     @apply xl:py-6 5xl:py-8;
     > a {
-      @apply block text-base xl:text-sm 3xl:text-[15px] 4xl:text-base 5xl:text-lg font-medium leading-tight whitespace-nowrap uppercase text-brand-dark-blue hover:text-brand-blue;
+      @apply block text-base xl:text-sm 3xl:text-[15px] 4xl:text-base 5xl:text-lg font-medium leading-tight whitespace-nowrap uppercase text-brand-dark-blue hover:text-brand-light-blue;
       @apply py-3 px-4 xl:py-0 xl:px-0;
       &.current-menu,
       &.current-menu-ancestor {
@@ -128,7 +128,7 @@
   @apply xl:static xl:transition-all xl:duration-500;
   &:hover {
     > a {
-      @apply xl:before:bg-brand-blue xl:before:-translate-x-0;
+      @apply xl:before:bg-brand-light-blue xl:before:-translate-x-0;
     }
     .mega-menu,
     .dropdown-menu {

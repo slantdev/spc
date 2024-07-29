@@ -10,17 +10,27 @@
         {
           "name": "Brand Dark Blue",
           "slug": "brand-dark-blue",
-          "color": "#020044"
+          "color": "#002253"
         },
         {
-          "name": "Brand Blue",
-          "slug": "brand-blue",
-          "color": "#1068F0"
+          "name": "Brand Light Blue",
+          "slug": "brand-light-blue",
+          "color": "#005AAB"
         },
         {
-          "name": "Brand Teal",
-          "slug": "brand-teal",
-          "color": "#66CCCC"
+          "name": "Brand Medium Blue",
+          "slug": "brand-medium-blue",
+          "color": "#2C4390"
+        },                
+        {
+          "name": "Brand Secondary Blue",
+          "slug": "brand-secondary-blue",
+          "color": "#3077B7"
+        },
+        {
+          "name": "Brand Aqua",
+          "slug": "brand-aqua",
+          "color": "#00B0E8"
         },
         {
           "name": "Brand Gray",
@@ -28,24 +38,9 @@
           "color": "#708090"
         },
         {
-          "name": "Brand Yellow",
-          "slug": "brand-yellow",
-          "color": "#FFA500"
-        },
-        {
-          "name": "Brand Red",
-          "slug": "brand-red",
-          "color": "#F03105"
-        },
-        {
-          "name": "Brand Tomato",
-          "slug": "brand-tomato",
-          "color": "#FF6347"
-        },
-        {
           "name": "Brand Black",
           "slug": "brand-black",
-          "color": "#404041"
+          "color": "#191919"
         },
         {
           "name": "Brand Light Gray",

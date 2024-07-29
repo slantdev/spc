@@ -52,8 +52,12 @@ module.exports = {
       ),
       fontFamily: {
         default: [...defaultTheme.fontFamily.sans],
-        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+        montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
         poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
+      },
+      lineHeight: {
+        tighter: "1.15",
       },
       screens: {
         print: { raw: "print" },
