@@ -19,7 +19,7 @@ $menu_items = get_field('menu_items', 'option');
         </button>
       </div>
       <?php if ($menu_items) : ?>
-        <ul class="main-nav--ul flex gap-x-12">
+        <ul class="main-nav--ul">
           <?php
           foreach ($menu_items as $menu_id => $menu) :
             $menu_item = $menu['menu_item'] ?? [];
@@ -53,7 +53,7 @@ $menu_items = get_field('menu_items', 'option');
 
               // Output menu item
               echo '<li class="' . $li_class . '">';
-              echo '<a href="' . esc_url($menu_item_url) . '" target="' . esc_attr($menu_item_target) . '" data-id="' . esc_attr($link_post_id) . '" class="block uppercase text-sm font-medium leading-6 py-3 ' . esc_attr($link_class) . '">' . esc_html($menu_item_title) . '</a>';
+              echo '<a href="' . esc_url($menu_item_url) . '" target="' . esc_attr($menu_item_target) . '" data-id="' . esc_attr($link_post_id) . '" class="' . esc_attr($link_class) . '">' . esc_html($menu_item_title) . '</a>';
 
               echo '<button class="menu-right-btn hidden">';
               echo spc_icon(array('icon' => 'chevron-down', 'group' => 'utilities', 'size' => '12', 'class' => 'w-3 h-3 -rotate-90'));

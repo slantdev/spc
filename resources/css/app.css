@@ -2,7 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* @import "partials/navigation.css"; */
+@import "partials/navigation.css";
 @import "partials/components.css";
 
 @media print {
