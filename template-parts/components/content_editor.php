@@ -20,7 +20,7 @@ if ($text_color) {
 
 // Outputting content editor if available
 if ($content_editor) {
-  echo '<div class="prose font-medium max-w-none xl:prose-lg prose-lead:xl:text-2xl prose-lead:font-normal" style="' . $content_editor_style . '">';
+  echo '<div class="prose font-medium max-w-none prose-lead:xl:text-2xl prose-lead:font-normal" style="' . $content_editor_style . '">';
   echo $content_editor;
   echo '</div>';
 }

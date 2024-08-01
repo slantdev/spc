@@ -29,7 +29,7 @@ if ($accordion_repeater) { ?>
         </div>
         <div class="collapse-content p-0">
           <div class="p-4 lg:p-8">
-            <div class="prose lg:prose-lg max-w-none text-left">
+            <div class="prose max-w-none text-left">
               <?php echo $content ?>
             </div>
           </div>

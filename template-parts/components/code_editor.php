@@ -7,7 +7,7 @@ $code_editor = $field && is_array($field) ? $field : get_sub_field($field ?: 'co
 $code_editor = $code_editor['code_editor'] ?? '';
 
 if ($code_editor) {
-  echo '<div class="prose font-medium max-w-none xl:prose-lg">';
+  echo '<div class="prose font-medium max-w-none">';
   echo $code_editor;
   echo '</div>';
 }

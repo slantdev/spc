@@ -19,7 +19,7 @@ $text_color = $lead_text_comp['lead_text']['settings']['text_color'] ?? '';
 $lead_text_style = $text_color ? '--tw-prose-lead:' . $text_color . ';color:' . $text_color . ';' : '';
 
 // Assigning default classes
-$text_size_class = $size ? $size : 'xl:prose-lg prose-lead:xl:text-2xl';
+$text_size_class = $size ? $size : 'prose-lead:xl:text-2xl';
 $text_align_class = $align ? $align : '';
 $text_leading_class = $leading ? $leading : '';
 $text_weight_class = $weight ? 'font-medium prose-lead:' . $weight : 'font-medium prose-lead:font-normal';

@@ -62,6 +62,20 @@ module.exports = {
       screens: {
         print: { raw: "print" },
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            fontSize: "15px",
+            lineHeight: "1.5",
+          },
+        },
+        base: {
+          css: {
+            fontSize: "15px",
+            lineHeight: "1.5",
+          },
+        },
+      },
     },
     screens: {
       xs: "480px",

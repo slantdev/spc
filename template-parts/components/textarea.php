@@ -16,7 +16,7 @@ $textarea = $textarea_component['text_area']['text_area'] ?? '';
 $text_color = $textarea_component['text_area']['settings']['text_color'] ?? '';
 
 // Setting textarea class to align
-$text_size_class = $size ? $size : 'xl:prose-lg';
+$text_size_class = $size ? $size : '';
 $text_align_class = $align ? $align : '';
 $text_leading_class = $leading ? $leading : '';
 $text_weight_class = $weight ? $weight : 'font-medium';
