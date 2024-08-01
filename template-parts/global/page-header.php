@@ -134,7 +134,7 @@ endif;
                   <?php yoast_breadcrumb('<div class="breadcrumbs text-sm lg:text-base mb-4 lg:mb-6" style="' . $breadcrumbs_style . '">', '</div>'); ?>
                 <?php endif; ?>
                 <?php if ($show_title && $title) : ?>
-                  <h1 class="text-3xl xl:text-[64px] leading-[1.1em] font-semibold" style="<?php echo $title_style ?>"><?php echo $title ?></h1>
+                  <h1 class="text-3xl xl:text-4xl leading-[1.1em] font-bold" style="<?php echo $title_style ?>"><?php echo $title ?></h1>
                 <?php endif; ?>
               </div>
             <?php endif; ?>

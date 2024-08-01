@@ -37,8 +37,8 @@
             "acfe_flexible_modal": {
                 "acfe_flexible_modal_enabled": "1",
                 "acfe_flexible_modal_title": "Add Section",
-                "acfe_flexible_modal_size": "full",
-                "acfe_flexible_modal_col": "5",
+                "acfe_flexible_modal_size": "large",
+                "acfe_flexible_modal_col": "3",
                 "acfe_flexible_modal_categories": "0"
             },
             "layouts": {
@@ -81,7 +81,7 @@
                     "acfe_flexible_render_template": "acf-layouts\/hero_slider.php",
                     "acfe_flexible_render_style": "",
                     "acfe_flexible_render_script": "",
-                    "acfe_flexible_modal_edit_size": "full",
+                    "acfe_flexible_modal_edit_size": "large",
                     "acfe_flexible_thumbnail": "",
                     "acfe_flexible_settings": false,
                     "acfe_flexible_settings_size": "medium",
@@ -233,7 +233,7 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1721897417,
+    "modified": 1722540041,
     "acfe_categories": {
         "flexible-content": "Flexible Content"
     }
