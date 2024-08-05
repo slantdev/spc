@@ -81,8 +81,8 @@ $hero_slider_repeater = $hero_slider['hero_slider'] ?? '';
         new Swiper('.section-hero .swiper', {
           slidesPerView: 1,
           spaceBetween: 0,
-          //loop: true,
-          loop: false,
+          loop: true,
+          //loop: false,
           speed: 500,
           watchOverflow: true,
           effect: 'fade',
