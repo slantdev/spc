@@ -5111,6 +5111,26 @@
     padding-top: 2rem;
   }
 
+  #poststuff .acf-layout .lg\:pb-28 {
+    padding-bottom: 7rem;
+  }
+
+  #poststuff .acf-layout .lg\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
+  #poststuff .acf-layout .lg\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  #poststuff .acf-layout .lg\:pb-36 {
+    padding-bottom: 9rem;
+  }
+
+  #poststuff .acf-layout .lg\:pt-36 {
+    padding-top: 9rem;
+  }
+
   #poststuff .acf-layout .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;

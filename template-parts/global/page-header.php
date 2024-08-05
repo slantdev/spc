@@ -129,9 +129,9 @@ endif;
         <div class="flex flex-col lg:flex-row lg:gap-x-8 xl:gap-x-12">
           <div class="w-full lg:w-2/3">
             <?php if ($show_breadcrumbs || $show_title) : ?>
-              <div class="flex flex-col pt-20 pb-6 lg:pt-28 lg:pb-20">
+              <div class="flex flex-col pt-20 pb-6 lg:pt-36 lg:pb-36">
                 <?php if ($show_breadcrumbs && function_exists('yoast_breadcrumb')) : ?>
-                  <?php yoast_breadcrumb('<div class="breadcrumbs text-sm lg:text-base mb-4 lg:mb-6" style="' . $breadcrumbs_style . '">', '</div>'); ?>
+                  <?php yoast_breadcrumb('<div class="breadcrumbs text-sm lg:text-base mb-4" style="' . $breadcrumbs_style . '">', '</div>'); ?>
                 <?php endif; ?>
                 <?php if ($show_title && $title) : ?>
                   <h1 class="text-3xl xl:text-4xl leading-[1.1em] font-bold" style="<?php echo $title_style ?>"><?php echo $title ?></h1>
