@@ -37,7 +37,7 @@ $hero_slider_repeater = $hero_slider['hero_slider'] ?? '';
                 <?php endif ?>
               </div>
             <?php endif ?>
-            <div class="relative z-10 min-h-[546px] flex flex-col justify-center">
+            <div class="relative z-10 min-h-[620px] flex flex-col justify-center">
               <div class="relative z-10 container max-w-screen-2xl">
                 <div class="flex flex-col xl:flex-row xl:gap-x-20 pt-24 pb-12 xl:py-16 xl:items-end">
                   <div class="hero-title-container w-full xl:w-1/2">
@@ -65,7 +65,7 @@ $hero_slider_repeater = $hero_slider['hero_slider'] ?? '';
           </div>
         <?php endforeach ?>
       </div>
-      <div class="swiper-arrows-container absolute inset-0 hidden xl:hidden">
+      <div class="swiper-arrows-container absolute inset-0">
         <div class="container max-w-screen-2xl relative h-full">
           <button type="button" class="swiper-btn-prev absolute z-10 left-0 xl:-left-32 top-2 lg:top-1/2 -translate-y-1/2 w-9 h-9 xl:w-10 xl:h-10 flex items-center justify-center text-slate-300 hover:text-brand-blue transition-all duration-200">
             <?php echo spc_icon(array('icon' => 'chevron-left', 'group' => 'utilities', 'size' => '96', 'class' => 'w-10 h-10')); ?>
@@ -92,10 +92,10 @@ $hero_slider_repeater = $hero_slider['hero_slider'] ?? '';
           autoplay: {
             delay: 8000,
           },
-          // navigation: {
-          //   nextEl: '.section-hero .swiper-btn-next',
-          //   prevEl: '.section-hero .swiper-btn-prev',
-          // },
+          navigation: {
+            nextEl: '.section-hero .swiper-btn-next',
+            prevEl: '.section-hero .swiper-btn-prev',
+          },
         });
       });
     </script>

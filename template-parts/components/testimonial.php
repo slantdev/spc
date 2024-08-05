@@ -48,14 +48,23 @@ if ($testimonial_repeater) { ?>
         <?php endforeach ?>
       </div>
     </div>
-
+    <div class="swiper-arrows-container absolute inset-0">
+      <div class="container max-w-screen-2xl relative h-full">
+        <button type="button" class="swiper-btn-prev absolute z-10 left-0 xl:-left-32 top-2 lg:top-1/2 -translate-y-1/2 w-8 h-8 xl:w-8 xl:h-8 flex items-center justify-center text-slate-300 hover:text-brand-blue transition-all duration-200">
+          <?php echo spc_icon(array('icon' => 'chevron-left', 'group' => 'utilities', 'size' => '96', 'class' => 'w-10 h-10')); ?>
+        </button>
+        <button type="button" class="swiper-btn-next absolute z-10 right-0 xl:-right-32 top-2 lg:top-1/2 -translate-y-1/2 w-8 h-8 xl:w-8 xl:h-8 flex items-center justify-center text-slate-300 hover:text-brand-blue transition-all duration-200">
+          <?php echo spc_icon(array('icon' => 'chevron-right', 'group' => 'utilities', 'size' => '96', 'class' => 'w-8 h-8')); ?>
+        </button>
+      </div>
+    </div>
     <script type="text/javascript">
       jQuery(function($) {
         new Swiper('#<?php echo $testimonial_id ?> .swiper', {
           slidesPerView: 2,
           spaceBetween: 0,
-          //loop: true,
-          loop: false,
+          loop: true,
+          //loop: false,
           speed: 500,
           watchOverflow: true,
           // effect: 'fade',
@@ -66,10 +75,10 @@ if ($testimonial_repeater) { ?>
             delay: 8000,
           },
           spaceBetween: 80,
-          // navigation: {
-          //   nextEl: '.section-hero .swiper-btn-next',
-          //   prevEl: '.section-hero .swiper-btn-prev',
-          // },
+          navigation: {
+            nextEl: '#<?php echo $testimonial_id ?> .swiper-btn-next',
+            prevEl: '#<?php echo $testimonial_id ?> .swiper-btn-prev',
+          },
         });
       });
     </script>

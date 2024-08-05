@@ -59,6 +59,16 @@ if ($imageslider_repeater) { ?>
       </div>
     </div>
     <div class="swiper-pagination !static mt-6 [&>.swiper-pagination-bullet]:rounded-md" style="--swiper-pagination-bullet-width: 60px;--swiper-pagination-bullet-height: 6px;<?php echo $pagination_style ?>"></div>
+    <div class="swiper-arrows-container absolute inset-0">
+      <div class="container max-w-screen-2xl relative h-full">
+        <button type="button" class="swiper-btn-prev absolute z-10 left-0 xl:-left-16 top-2 lg:top-1/2 -translate-y-1/2 w-8 h-8 xl:w-8 xl:h-8 flex items-center justify-center text-slate-300 hover:text-brand-blue transition-all duration-200">
+          <?php echo spc_icon(array('icon' => 'chevron-left', 'group' => 'utilities', 'size' => '96', 'class' => 'w-8 h-8')); ?>
+        </button>
+        <button type="button" class="swiper-btn-next absolute z-10 right-0 xl:-right-16 top-2 lg:top-1/2 -translate-y-1/2 w-8 h-8 xl:w-8 xl:h-8 flex items-center justify-center text-slate-300 hover:text-brand-blue transition-all duration-200">
+          <?php echo spc_icon(array('icon' => 'chevron-right', 'group' => 'utilities', 'size' => '96', 'class' => 'w-8 h-8')); ?>
+        </button>
+      </div>
+    </div>
   </div>
   <script type="text/javascript">
     jQuery(function($) {
@@ -76,7 +86,12 @@ if ($imageslider_repeater) { ?>
           delay: <?php echo $autoplay_delay_setting ?>,
         },
         pagination: {
-          el: ".swiper-pagination",
+          el: "#<?php echo $imageslider_id ?> .swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '#<?php echo $imageslider_id ?> .swiper-btn-next',
+          prevEl: '#<?php echo $imageslider_id ?> .swiper-btn-prev',
         },
       });
     });

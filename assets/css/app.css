@@ -3355,13 +3355,13 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .\!ml-0 {
   margin-left: 0px !important;
@@ -3434,6 +3434,12 @@ details.collapse summary::-webkit-details-marker {
 }
 .mt-auto {
   margin-top: auto;
+}
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.mt-16 {
+  margin-top: 4rem;
 }
 .line-clamp-2 {
   overflow: hidden;
@@ -3516,8 +3522,8 @@ details.collapse summary::-webkit-details-marker {
 .max-h-full {
   max-height: 100%;
 }
-.min-h-\[546px\] {
-  min-height: 546px;
+.min-h-\[620px\] {
+  min-height: 620px;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -3621,6 +3627,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-sm {
   max-width: 24rem;
 }
+.max-w-4xl {
+  max-width: 56rem;
+}
 .flex-none {
   flex: none;
 }
@@ -3682,6 +3691,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .flex-col {
   flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
 }
 .items-start {
   align-items: flex-start;
@@ -3796,6 +3808,9 @@ details.collapse summary::-webkit-details-marker {
 .border {
   border-width: 1px;
 }
+.\!border {
+  border-width: 1px !important;
+}
 .border-x-0 {
   border-left-width: 0px;
   border-right-width: 0px;
@@ -3818,6 +3833,13 @@ details.collapse summary::-webkit-details-marker {
 .border-solid {
   border-style: solid;
 }
+.\!border-solid {
+  border-style: solid !important;
+}
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -3838,9 +3860,9 @@ details.collapse summary::-webkit-details-marker {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+.\!border-slate-200 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity)) !important;
 }
 .bg-\[\#E2E2E2\] {
   --tw-bg-opacity: 1;
@@ -4003,6 +4025,14 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.\!py-3 {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 .\!pb-2 {
   padding-bottom: 0.5rem !important;
 }
@@ -4075,6 +4105,9 @@ details.collapse summary::-webkit-details-marker {
 .pt-8 {
   padding-top: 2rem;
 }
+.pb-16 {
+  padding-bottom: 4rem;
+}
 .text-left {
   text-align: left;
 }
@@ -4083,6 +4116,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .text-right {
   text-align: right;
+}
+.font-default {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -4191,6 +4227,9 @@ details.collapse summary::-webkit-details-marker {
 .leading-tighter {
   line-height: 1.15;
 }
+.\!leading-tight {
+  line-height: 1.25 !important;
+}
 .-tracking-\[0\.0125em\] {
   letter-spacing: -0.0125em;
 }
@@ -4247,6 +4286,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-slate-600 {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
 .underline {
   text-decoration-line: underline;
 }
@@ -4285,6 +4328,11 @@ details.collapse summary::-webkit-details-marker {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.\!shadow-inner {
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05) !important;
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -5405,6 +5453,11 @@ details.collapse summary::-webkit-details-marker {
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.hover\:shadow-xl:hover {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .hover\:brightness-110:hover {
   --tw-brightness: brightness(1.1);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -5472,6 +5525,10 @@ details.collapse summary::-webkit-details-marker {
     width: 4rem;
   }
 
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -5510,6 +5567,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:mb-6 {
     margin-bottom: 1.5rem;
+  }
+
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .lg\:h-12 {
@@ -5730,6 +5791,14 @@ details.collapse summary::-webkit-details-marker {
     right: -8rem;
   }
 
+  .xl\:-left-16 {
+    left: -4rem;
+  }
+
+  .xl\:-right-16 {
+    right: -4rem;
+  }
+
   .xl\:-mx-6 {
     margin-left: -1.5rem;
     margin-right: -1.5rem;
@@ -5769,6 +5838,14 @@ details.collapse summary::-webkit-details-marker {
 
   .xl\:h-full {
     height: 100%;
+  }
+
+  .xl\:h-9 {
+    height: 2.25rem;
+  }
+
+  .xl\:h-8 {
+    height: 2rem;
   }
 
   .xl\:w-1\/2 {
@@ -5813,6 +5890,14 @@ details.collapse summary::-webkit-details-marker {
 
   .xl\:w-full {
     width: 100%;
+  }
+
+  .xl\:w-9 {
+    width: 2.25rem;
+  }
+
+  .xl\:w-8 {
+    width: 2rem;
   }
 
   .xl\:grow {

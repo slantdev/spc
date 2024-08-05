@@ -509,7 +509,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "field-hidden",
+                "class": "",
                 "id": ""
             },
             "layout": "block",
@@ -864,7 +864,7 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1722193184,
+    "modified": 1722887045,
     "acfe_categories": {
         "layout": "Layout"
     }
