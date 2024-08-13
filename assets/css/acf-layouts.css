@@ -3179,6 +3179,10 @@
   height: 56px;
 }
 
+#poststuff .acf-layout .h-\[48px\] {
+  height: 48px;
+}
+
 #poststuff .acf-layout .max-h-full {
   max-height: 100%;
 }
@@ -3737,6 +3741,10 @@
 
 #poststuff .acf-layout .p-6 {
   padding: 1.5rem;
+}
+
+#poststuff .acf-layout .p-5 {
+  padding: 1.25rem;
 }
 
 #poststuff .acf-layout .\!px-4 {

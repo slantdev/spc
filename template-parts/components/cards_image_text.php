@@ -112,8 +112,8 @@ if ($card_repeater) { ?>
               </div>
             <?php elseif ($use_image_or_icon == 'icon' && $icon_url) : ?>
               <div class="pt-4">
-                <div class="p-6 rounded-full inline-block" style="<?php echo $icon_css_style ?>">
-                  <img src="<?php echo $icon_url ?>" alt="" class="w-auto h-[56px]">
+                <div class="p-5 rounded-full inline-block" style="<?php echo $icon_css_style ?>">
+                  <img src="<?php echo $icon_url ?>" alt="" class="w-auto h-[48px]">
                 </div>
               </div>
             <?php else : ?>

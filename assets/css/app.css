@@ -3519,6 +3519,9 @@ details.collapse summary::-webkit-details-marker {
 .h-\[56px\] {
   height: 56px;
 }
+.h-\[48px\] {
+  height: 48px;
+}
 .max-h-full {
   max-height: 100%;
 }
@@ -3947,6 +3950,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .p-6 {
   padding: 1.5rem;
+}
+.p-5 {
+  padding: 1.25rem;
 }
 .\!px-4 {
   padding-left: 1rem !important;
