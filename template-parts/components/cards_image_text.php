@@ -113,22 +113,24 @@ if ($card_repeater) { ?>
             <?php elseif ($use_image_or_icon == 'icon' && $icon_url) : ?>
               <div class="pt-4">
                 <div class="p-6 rounded-full inline-block" style="<?php echo $icon_css_style ?>">
-                  <img src="<?php echo $icon_url ?>" alt="" class="w-auto h-[70px]">
+                  <img src="<?php echo $icon_url ?>" alt="" class="w-auto h-[56px]">
                 </div>
               </div>
-            <?php else : $use_image_or_icon == 'image' && $image_url ?>
+            <?php else : ?>
               <div class="rounded-lg overflow-clip">
                 <div class="aspect-w-16 aspect-h-8">
                   <div class="bg-slate-200 w-full h-full"></div>
                 </div>
               </div>
             <?php endif ?>
-            <div class="py-4 xl:py-6">
+            <div class="py-4 xl:py-6 prose">
               <?php if ($title) : ?>
-                <h4 class="text-lg font-bold mb-4" style="<?php echo $title_css_style ?>"><?php echo $title ?></h4>
+                <h4 class="text-lg leading-snug font-bold mb-4" style="<?php echo $title_css_style ?>"><?php echo $title ?></h4>
               <?php endif ?>
-              <?php if ($text) : ?>
+              <?php if ($text && $use_image_or_icon == 'image') : ?>
                 <div class="text-[15px] leading-normal" style="<?php echo $text_css_style ?>"><?php echo $text ?></div>
+              <?php elseif ($text && $use_image_or_icon == 'icon') : ?>
+                <div class="text-sm leading-normal" style="<?php echo $text_css_style ?>"><?php echo $text ?></div>
               <?php endif ?>
               <?php if ($link_url) : ?>
                 <div class="mt-4">

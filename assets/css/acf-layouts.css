@@ -3040,6 +3040,10 @@
   margin-top: 3rem;
 }
 
+#poststuff .acf-layout .mt-16 {
+  margin-top: 4rem;
+}
+
 #poststuff .acf-layout .mt-2 {
   margin-top: 0.5rem;
 }
@@ -3066,14 +3070,6 @@
 
 #poststuff .acf-layout .mt-auto {
   margin-top: auto;
-}
-
-#poststuff .acf-layout .mb-3 {
-  margin-bottom: 0.75rem;
-}
-
-#poststuff .acf-layout .mt-16 {
-  margin-top: 4rem;
 }
 
 #poststuff .acf-layout .line-clamp-2 {
@@ -3177,6 +3173,10 @@
 
 #poststuff .acf-layout .h-full {
   height: 100%;
+}
+
+#poststuff .acf-layout .h-\[56px\] {
+  height: 56px;
 }
 
 #poststuff .acf-layout .max-h-full {
@@ -3283,6 +3283,10 @@
   width: 1px;
 }
 
+#poststuff .acf-layout .max-w-4xl {
+  max-width: 56rem;
+}
+
 #poststuff .acf-layout .max-w-full {
   max-width: 100%;
 }
@@ -3321,10 +3325,6 @@
 
 #poststuff .acf-layout .max-w-sm {
   max-width: 24rem;
-}
-
-#poststuff .acf-layout .max-w-4xl {
-  max-width: 56rem;
 }
 
 #poststuff .acf-layout .flex-none {
@@ -3401,6 +3401,10 @@
 
 #poststuff .acf-layout .grid-cols-8 {
   grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+#poststuff .acf-layout .grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 #poststuff .acf-layout .flex-col {
@@ -3556,12 +3560,12 @@
   border-top-right-radius: 1.25rem;
 }
 
-#poststuff .acf-layout .border {
-  border-width: 1px;
-}
-
 #poststuff .acf-layout .\!border {
   border-width: 1px !important;
+}
+
+#poststuff .acf-layout .border {
+  border-width: 1px;
 }
 
 #poststuff .acf-layout .border-x-0 {
@@ -3589,12 +3593,17 @@
   border-top-width: 0px;
 }
 
+#poststuff .acf-layout .\!border-solid {
+  border-style: solid !important;
+}
+
 #poststuff .acf-layout .border-solid {
   border-style: solid;
 }
 
-#poststuff .acf-layout .\!border-solid {
-  border-style: solid !important;
+#poststuff .acf-layout .\!border-slate-200 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity)) !important;
 }
 
 #poststuff .acf-layout .border-gray-200 {
@@ -3625,11 +3634,6 @@
 #poststuff .acf-layout .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-#poststuff .acf-layout .\!border-slate-200 {
-  --tw-border-opacity: 1 !important;
-  border-color: rgb(226 232 240 / var(--tw-border-opacity)) !important;
 }
 
 #poststuff .acf-layout .bg-\[\#E2E2E2\] {
@@ -3755,6 +3759,11 @@
   padding-bottom: 0.625rem !important;
 }
 
+#poststuff .acf-layout .\!py-3 {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
 #poststuff .acf-layout .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -3805,6 +3814,11 @@
   padding-bottom: 3rem;
 }
 
+#poststuff .acf-layout .py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 #poststuff .acf-layout .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -3835,16 +3849,6 @@
   padding-bottom: 2rem;
 }
 
-#poststuff .acf-layout .\!py-3 {
-  padding-top: 0.75rem !important;
-  padding-bottom: 0.75rem !important;
-}
-
-#poststuff .acf-layout .py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 #poststuff .acf-layout .\!pb-2 {
   padding-bottom: 0.5rem !important;
 }
@@ -3867,6 +3871,10 @@
 
 #poststuff .acf-layout .pb-12 {
   padding-bottom: 3rem;
+}
+
+#poststuff .acf-layout .pb-16 {
+  padding-bottom: 4rem;
 }
 
 #poststuff .acf-layout .pb-20 {
@@ -3939,10 +3947,6 @@
 
 #poststuff .acf-layout .pt-8 {
   padding-top: 2rem;
-}
-
-#poststuff .acf-layout .pb-16 {
-  padding-bottom: 4rem;
 }
 
 #poststuff .acf-layout .text-left {
@@ -4068,6 +4072,10 @@
   text-transform: uppercase;
 }
 
+#poststuff .acf-layout .\!leading-tight {
+  line-height: 1.25 !important;
+}
+
 #poststuff .acf-layout .leading-\[1\.1em\] {
   line-height: 1.1em;
 }
@@ -4098,10 +4106,6 @@
 
 #poststuff .acf-layout .leading-tighter {
   line-height: 1.15;
-}
-
-#poststuff .acf-layout .\!leading-tight {
-  line-height: 1.25 !important;
 }
 
 #poststuff .acf-layout .-tracking-\[0\.0125em\] {
@@ -4171,14 +4175,14 @@
   color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
-#poststuff .acf-layout .text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 #poststuff .acf-layout .text-slate-600 {
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+#poststuff .acf-layout .text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 #poststuff .acf-layout .underline {
@@ -4206,6 +4210,12 @@
   background-blend-mode: multiply;
 }
 
+#poststuff .acf-layout .\!shadow-inner {
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05) !important;
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
 #poststuff .acf-layout .shadow-inner {
   --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
@@ -4228,12 +4238,6 @@
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-#poststuff .acf-layout .\!shadow-inner {
-  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05) !important;
-  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color) !important;
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
 
 #poststuff .acf-layout .filter {
@@ -4897,6 +4901,26 @@
     width: 4rem;
   }
 
+  #poststuff .acf-layout .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  #poststuff .acf-layout .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #poststuff .acf-layout .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #poststuff .acf-layout .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  #poststuff .acf-layout .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
   #poststuff .acf-layout .md\:flex-nowrap {
     flex-wrap: nowrap;
   }
@@ -4936,10 +4960,6 @@
 
   #poststuff .acf-layout .lg\:top-5 {
     top: 1.25rem;
-  }
-
-  #poststuff .acf-layout .lg\:mb-6 {
-    margin-bottom: 1.5rem;
   }
 
   #poststuff .acf-layout .lg\:mb-8 {
@@ -4992,6 +5012,18 @@
 
   #poststuff .acf-layout .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  #poststuff .acf-layout .lg\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  #poststuff .acf-layout .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #poststuff .acf-layout .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   #poststuff .acf-layout .lg\:flex-row {
@@ -5067,6 +5099,10 @@
     padding-bottom: 6rem;
   }
 
+  #poststuff .acf-layout .lg\:pb-36 {
+    padding-bottom: 9rem;
+  }
+
   #poststuff .acf-layout .lg\:pb-6 {
     padding-bottom: 1.5rem;
   }
@@ -5099,8 +5135,8 @@
     padding-top: 6rem;
   }
 
-  #poststuff .acf-layout .lg\:pt-28 {
-    padding-top: 7rem;
+  #poststuff .acf-layout .lg\:pt-36 {
+    padding-top: 9rem;
   }
 
   #poststuff .acf-layout .lg\:pt-6 {
@@ -5109,26 +5145,6 @@
 
   #poststuff .acf-layout .lg\:pt-8 {
     padding-top: 2rem;
-  }
-
-  #poststuff .acf-layout .lg\:pb-28 {
-    padding-bottom: 7rem;
-  }
-
-  #poststuff .acf-layout .lg\:pb-32 {
-    padding-bottom: 8rem;
-  }
-
-  #poststuff .acf-layout .lg\:pt-32 {
-    padding-top: 8rem;
-  }
-
-  #poststuff .acf-layout .lg\:pb-36 {
-    padding-bottom: 9rem;
-  }
-
-  #poststuff .acf-layout .lg\:pt-36 {
-    padding-top: 9rem;
   }
 
   #poststuff .acf-layout .lg\:text-2xl {
@@ -5177,20 +5193,20 @@
     position: static;
   }
 
-  #poststuff .acf-layout .xl\:-left-32 {
-    left: -8rem;
-  }
-
-  #poststuff .acf-layout .xl\:-right-32 {
-    right: -8rem;
-  }
-
   #poststuff .acf-layout .xl\:-left-16 {
     left: -4rem;
   }
 
+  #poststuff .acf-layout .xl\:-left-32 {
+    left: -8rem;
+  }
+
   #poststuff .acf-layout .xl\:-right-16 {
     right: -4rem;
+  }
+
+  #poststuff .acf-layout .xl\:-right-32 {
+    right: -8rem;
   }
 
   #poststuff .acf-layout .xl\:-mx-6 {
@@ -5230,16 +5246,12 @@
     height: 2.5rem;
   }
 
-  #poststuff .acf-layout .xl\:h-full {
-    height: 100%;
-  }
-
-  #poststuff .acf-layout .xl\:h-9 {
-    height: 2.25rem;
-  }
-
   #poststuff .acf-layout .xl\:h-8 {
     height: 2rem;
+  }
+
+  #poststuff .acf-layout .xl\:h-full {
+    height: 100%;
   }
 
   #poststuff .acf-layout .xl\:w-1\/2 {
@@ -5278,20 +5290,16 @@
     width: 14rem;
   }
 
+  #poststuff .acf-layout .xl\:w-8 {
+    width: 2rem;
+  }
+
   #poststuff .acf-layout .xl\:w-\[480px\] {
     width: 480px;
   }
 
   #poststuff .acf-layout .xl\:w-full {
     width: 100%;
-  }
-
-  #poststuff .acf-layout .xl\:w-9 {
-    width: 2.25rem;
-  }
-
-  #poststuff .acf-layout .xl\:w-8 {
-    width: 2rem;
   }
 
   #poststuff .acf-layout .xl\:grow {
@@ -5312,6 +5320,10 @@
 
   #poststuff .acf-layout .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  #poststuff .acf-layout .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   #poststuff .acf-layout .xl\:flex-row {

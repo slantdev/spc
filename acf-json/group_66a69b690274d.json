@@ -277,8 +277,7 @@
                     "acfe_group_modal": 1,
                     "acfe_group_modal_close": 1,
                     "acfe_group_modal_button": "<span class=\"dashicons dashicons-admin-settings\"><\/span>",
-                    "acfe_group_modal_size": "small",
-                    "acfe_seamless_style": 0,
+                    "acfe_group_modal_size": "large",
                     "sub_fields": [
                         {
                             "key": "field_66a70354cf390",
@@ -308,7 +307,7 @@
                             "label": "Grid Columns",
                             "name": "grid_columns",
                             "aria-label": "",
-                            "type": "button_group",
+                            "type": "select",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -318,14 +317,20 @@
                                 "id": ""
                             },
                             "choices": {
-                                "2": "2 Columns",
-                                "3": "3 Columns",
-                                "4": "4 Columns"
+                                "2": "2 Col",
+                                "3": "3 Col",
+                                "4": "4 Col",
+                                "5": "5 Col"
                             },
-                            "default_value": 3,
+                            "default_value": false,
                             "return_format": "value",
+                            "multiple": 0,
+                            "allow_custom": 0,
+                            "search_placeholder": "",
                             "allow_null": 0,
-                            "layout": "horizontal"
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
                         },
                         {
                             "key": "field_66a6f56061221",
@@ -459,7 +464,8 @@
                             "enable_opacity": 0,
                             "return_format": "string"
                         }
-                    ]
+                    ],
+                    "acfe_seamless_style": 0
                 }
             ]
         }
@@ -489,7 +495,7 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1722221783,
+    "modified": 1723513123,
     "acfe_categories": {
         "components": "Components"
     }
