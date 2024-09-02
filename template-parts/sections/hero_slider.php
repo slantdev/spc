@@ -111,17 +111,17 @@ $hero_slider_repeater = $hero_slider['hero_slider'] ?? '';
         new Swiper('.section-hero .swiper', {
           slidesPerView: 1,
           spaceBetween: 0,
-          //loop: true,
-          loop: false,
+          loop: true,
+          //loop: false,
           speed: 500,
           watchOverflow: true,
           effect: 'fade',
           fadeEffect: {
             crossFade: true
           },
-          // autoplay: {
-          //   delay: 8000,
-          // },
+          autoplay: {
+            delay: 8000,
+          },
           navigation: {
             nextEl: '.section-hero .swiper-btn-next',
             prevEl: '.section-hero .swiper-btn-prev',
