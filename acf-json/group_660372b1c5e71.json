@@ -172,16 +172,47 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "acfe_permissions": "",
                             "clone": [
                                 "group_660375e852d8a"
                             ],
-                            "display": "seamless",
+                            "display": "group",
                             "layout": "block",
                             "prefix_label": 0,
                             "prefix_name": 0,
-                            "acfe_settings": "",
                             "acfe_seamless_style": 0,
                             "acfe_clone_modal": 0,
+                            "acfe_settings": "",
+                            "acfe_clone_modal_close": 0,
+                            "acfe_clone_modal_button": "",
+                            "acfe_clone_modal_size": "large",
+                            "parent_repeater": "field_660372da3553a"
+                        },
+                        {
+                            "key": "field_66d55f2cc0961",
+                            "label": "Background Mobile",
+                            "name": "background_mobile",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_660375e852d8a"
+                            ],
+                            "display": "group",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1,
+                            "acfe_seamless_style": 0,
+                            "acfe_clone_modal": 0,
+                            "acfe_settings": "",
                             "acfe_clone_modal_close": 0,
                             "acfe_clone_modal_button": "",
                             "acfe_clone_modal_size": "large",
@@ -265,7 +296,7 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1722539947,
+    "modified": 1725259919,
     "acfe_categories": {
         "layout": "Layout"
     }

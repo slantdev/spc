@@ -5724,6 +5724,14 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 2rem;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:h-12 {
     height: 3rem;
   }

@@ -5115,6 +5115,14 @@
     margin-bottom: 2rem;
   }
 
+  #poststuff .acf-layout .lg\:block {
+    display: block;
+  }
+
+  #poststuff .acf-layout .lg\:hidden {
+    display: none;
+  }
+
   #poststuff .acf-layout .lg\:h-12 {
     height: 3rem;
   }

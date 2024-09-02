@@ -21,16 +21,46 @@ $hero_slider_repeater = $hero_slider['hero_slider'] ?? '';
           $pre_headline_text = $pre_headline['heading']['heading_text'] ?? '';
           //preint_r($pre_headline);
           $text_area = $hero['text_area']['text_area'] ?? '';
-          $background = $hero['background'] ?? '';
+
+          $background = $hero['background']['background'] ?? '';
           $background_image = $background['background_image'] ?? '';
           $background_overlay = $background['background_overlay'] ?? '';
           $background_position = $background['background_position'] ?? '';
           $background_class = $background_position ? 'object-' . $background_position : '';
+
+          $background_mobile = $hero['background_mobile']['background'] ?? '';
+          $background_mobile_image = $background_mobile['background_image'] ?? '';
+          $background_mobile_overlay = $background_mobile['background_overlay'] ?? '';
+          $background_mobile_position = $background_mobile['background_position'] ?? '';
+          $background_mobile_class = $background_mobile_position ? 'object-' . $background_mobile_position : '';
+
+          //preint_r($hero);
+
           $buttons_repeater = $hero['buttons_repeater'] ?? '';
           ?>
           <div class="swiper-slide relative">
-            <?php if ($background_image) : ?>
-              <div class="absolute inset-0 -z-1">
+            <?php
+            if ($background_mobile_image) :
+              $container_class = '';
+              if ($background_image) {
+                $container_class = 'lg:hidden';
+              }
+            ?>
+              <div class="absolute inset-0 -z-1 <?php echo $container_class ?>">
+                <img class="object-cover w-full h-full <?php echo $background_mobile_class ?>" src="<?php echo $background_mobile_image['url'] ?>" alt="<?php echo $background_mobile_image['alt'] ?>">
+                <?php if ($background_mobile_overlay) : ?>
+                  <div class="absolute inset-0 -z-1 text-4xl" style="background-color: <?php echo $background_mobile_overlay ?>;"></div>
+                <?php endif ?>
+              </div>
+            <?php endif ?>
+            <?php
+            if ($background_image) :
+              $container_class = '';
+              if ($background_mobile_image) {
+                $container_class = 'hidden lg:block';
+              }
+            ?>
+              <div class="absolute inset-0 -z-1 <?php echo $container_class ?>">
                 <img class="object-cover w-full h-full <?php echo $background_class ?>" src="<?php echo $background_image['url'] ?>" alt="<?php echo $background_image['alt'] ?>">
                 <?php if ($background_overlay) : ?>
                   <div class="absolute inset-0 -z-1 text-4xl" style="background-color: <?php echo $background_overlay ?>;"></div>

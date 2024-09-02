@@ -4068,6 +4068,12 @@ body {
     .lg\:mb-8 {
         margin-bottom: 2rem;
     }
+    .lg\:block {
+        display: block;
+    }
+    .lg\:hidden {
+        display: none;
+    }
     .lg\:h-12 {
         height: 3rem;
     }
