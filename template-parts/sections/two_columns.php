@@ -58,7 +58,7 @@ switch ($column_settings) {
   <div class="section-spacing relative <?php echo $section_padding_top . ' ' . $section_padding_bottom ?>">
     <?php get_template_part('template-parts/global/background_ornament', '', array('location' => 'top', 'shape' => $section_ornament_shape, 'color' => $section_ornament_color, 'position' => $section_ornament_position, 'class' => '')); ?>
     <div class="section-content container mx-auto max-w-screen-2xl animation-wrapper">
-      <div class="relative z-10 flex flex-col xl:flex-row xl:gap-x-12 2xl:gap-x-24 <?php echo $entrance_animation_class ?>">
+      <div class="relative z-10 flex flex-col lg:flex-row xl:gap-x-12 2xl:gap-x-24 <?php echo $entrance_animation_class ?>">
         <div class="<?php echo $col_left_class ?>">
           <?php get_template_part('template-parts/components/components', '', array('field' => $left_column_components)); ?>
         </div>

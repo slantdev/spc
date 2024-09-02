@@ -219,8 +219,8 @@ if ($subscribe && !$disable_subscribe) :
   <div class="bg-brand-medium-blue text-white py-6 xl:py-4" style="<?php echo $footer_bottom_style ?>">
     <div class="container max-w-screen-2xl">
       <div class="flex flex-col gap-y-1 xl:flex-row xl:gap-x-20 xl:justify-between xl:items-center">
-        <div class="w-full">
-          <div class="flex gap-x-20">
+        <div class="w-full mb-4 md:mb-0">
+          <div class="flex flex-col gap-y-1 md:flex-row md:gap-x-20">
             <?php if ($copyright_site_name) : ?>
               <span class="text-sm opacity-70"><?php echo $copyright_site_name ?></span>
             <?php endif; ?>
@@ -242,9 +242,9 @@ if ($subscribe && !$disable_subscribe) :
           $logo_url = $footer_logo['url'] ?? '';
           $logo_alt = $footer_logo['alt'] ?? '';
         ?>
-          <div class="w-full flex justify-end">
+          <div class="w-full flex lg:justify-end">
             <a href="<?php echo site_url() ?>">
-              <img src="<?php echo $logo_url ?>" alt="<?php echo $logo_alt ?>" class="h-14 w-auto">
+              <img src="<?php echo $logo_url ?>" alt="<?php echo $logo_alt ?>" class="w-64 h-auto xl:!h-14 xl:!w-auto">
             </a>
           </div>
         <?php endif ?>

@@ -54,7 +54,7 @@ $card_id = 'card-' . $uniqid;
 // Outputting card if repeater exists
 if ($card_repeater) { ?>
   <div id="<?php echo $card_id ?>" class="relative">
-    <div class="grid grid-cols-1 xl:grid-cols-<?php echo $grid_columns ?> gap-8 xl:gap-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-<?php echo $grid_columns ?> gap-4 md:gap-8 xl:gap-12">
       <?php
       foreach ($card_repeater as $card) :
         $image_or_icon = $card['image_or_icon'] ?? [];
@@ -78,7 +78,7 @@ if ($card_repeater) { ?>
                 <img src="<?php echo $image_url ?>" alt="<?php echo $image_alt ?>" class="w-full h-full object-cover">
               </div>
             <?php elseif ($use_image_or_icon == 'icon' && $icon_url) : ?>
-              <div class="pt-4 px-4 xl:pt-8 xl:px-6">
+              <div class="pt-0 px-4 lg:pt-4 xl:pt-8 xl:px-6">
                 <div class="p-6 rounded-full inline-block" style="<?php echo $icon_css_style ?>">
                   <img src="<?php echo $icon_url ?>" alt="" class="w-auto h-[70px]">
                 </div>
@@ -111,7 +111,7 @@ if ($card_repeater) { ?>
                 </div>
               </div>
             <?php elseif ($use_image_or_icon == 'icon' && $icon_url) : ?>
-              <div class="pt-4">
+              <div class="pt-0 md:pt-4">
                 <div class="p-5 rounded-full inline-block" style="<?php echo $icon_css_style ?>">
                   <img src="<?php echo $icon_url ?>" alt="" class="w-auto h-[48px]">
                 </div>
@@ -123,7 +123,7 @@ if ($card_repeater) { ?>
                 </div>
               </div>
             <?php endif ?>
-            <div class="py-4 xl:py-6 prose">
+            <div class="pt-4 xl:pt-6 prose">
               <?php if ($title) : ?>
                 <h4 class="text-lg leading-snug font-bold mb-4" style="<?php echo $title_css_style ?>"><?php echo $title ?></h4>
               <?php endif ?>

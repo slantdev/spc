@@ -60,15 +60,15 @@ $stats_id = 'stats-' . $uniqid;
 // Outputting stats if repeater exists
 if ($stats_repeater) { ?>
   <div id="<?php echo $stats_id ?>" class="relative">
-    <div class="flex justify-between">
+    <div class="flex flex-col md:flex-row gap-8 md:justify-between">
       <?php
       foreach ($stats_repeater as $stats) :
         $stats_number = $stats['stats_number'] ?? '';
         $title = $stats['title'] ?? '';
       ?>
         <div class="text-center">
-          <div class="text-6xl font-bold" style="<?php echo $number_style ?>"><span class="counterNumber"><?php echo number_format($stats_number) ?></span></div>
-          <div class="uppercase font-semibold text-lg" style="<?php echo $title_style ?>"><?php echo $title ?></div>
+          <div class="text-5xl md:text-6xl font-bold" style="<?php echo $number_style ?>"><span class="counterNumber"><?php echo number_format($stats_number) ?></span></div>
+          <div class="uppercase font-semibold text-base md:text-lg" style="<?php echo $title_style ?>"><?php echo $title ?></div>
         </div>
       <?php endforeach ?>
     </div>

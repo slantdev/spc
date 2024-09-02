@@ -36,11 +36,11 @@ $site_logo = $header_logo['site_logo']['url'] ?? get_stylesheet_directory_uri() 
     <div class="container max-w-screen-2xl">
       <div class="relative xl:flex xl:justify-between">
         <div class="flex justify-between items-center xl:justify-normal">
-          <div class="site-logo py-3 xl:py-6">
-            <a href="<?php echo site_url() ?>"><img src="<?php echo $site_logo ?>" alt="<?php echo get_bloginfo('name'); ?>" class="!h-12 xl:!h-16 3xl:!h-16 !w-auto"></a>
+          <div class="site-logo py-4 xl:py-6">
+            <a href="<?php echo site_url() ?>"><img src="<?php echo $site_logo ?>" alt="<?php echo get_bloginfo('name'); ?>" class="w-64 h-auto xl:!h-16 3xl:!h-16 xl:!w-auto"></a>
           </div>
           <button type="button" aria-label="Toggle navigation" id="primary-menu-toggle" class="menu-open-btn xl:hidden">
-            <svg viewBox="0 0 20 20" class="inline-block w-5 h-5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg viewBox="0 0 20 20" class="inline-block w-5 h-5 text-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
                 <g id="icon-shape">
                   <path d="M0,3 L20,3 L20,5 L0,5 L0,3 Z M0,9 L20,9 L20,11 L0,11 L0,9 Z M0,15 L20,15 L20,17 L0,17 L0,15 Z" id="Combined-Shape"></path>
@@ -49,7 +49,7 @@ $site_logo = $header_logo['site_logo']['url'] ?? get_stylesheet_directory_uri() 
             </svg>
           </button>
         </div>
-        <div class="flex items-start xl:justify-end py-3 xl:py-6">
+        <div class="hidden xl:flex items-start xl:justify-end py-3 xl:py-6">
           <div id="search-form-container">
             <div class="py-4 flex items-center w-full h-full">
               <div class="flex w-full gap-x-4 items-center">

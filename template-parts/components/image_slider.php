@@ -49,7 +49,7 @@ if ($imageslider_repeater) { ?>
           $image_alt = $image['alt'] ?? '';
         ?>
           <div class="swiper-slide relative">
-            <div class="rounded-lg overflow-clip">
+            <div class="rounded-md md:rounded-lg overflow-clip">
               <div class="aspect-w-16 aspect-h-9">
                 <img src="<?php echo $image_url ?>" alt="<?php echo $image_alt ?>" class="w-full h-full object-cover">
               </div>
@@ -61,11 +61,11 @@ if ($imageslider_repeater) { ?>
     <div class="swiper-pagination !static mt-6 [&>.swiper-pagination-bullet]:rounded-md" style="--swiper-pagination-bullet-width: 60px;--swiper-pagination-bullet-height: 6px;<?php echo $pagination_style ?>"></div>
     <div class="swiper-arrows-container absolute inset-0">
       <div class="container max-w-screen-2xl relative h-full">
-        <button type="button" class="swiper-btn-prev absolute z-10 left-0 xl:-left-16 top-2 lg:top-1/2 -translate-y-1/2 w-8 h-8 xl:w-8 xl:h-8 flex items-center justify-center text-slate-300 hover:text-brand-blue transition-all duration-200">
-          <?php echo spc_icon(array('icon' => 'chevron-left', 'group' => 'utilities', 'size' => '96', 'class' => 'w-8 h-8')); ?>
+        <button type="button" class="swiper-btn-prev absolute z-10 left-0 xl:-left-16 top-1/2 -translate-y-1/2 -mt-[24px] md:-mt-0 w-4 h-4 md:w-8 md:h-8 flex items-center justify-center text-slate-300 hover:text-brand-blue transition-all duration-200">
+          <?php echo spc_icon(array('icon' => 'chevron-left', 'group' => 'utilities', 'size' => '96', 'class' => 'w-4 h-4 md:w-8 md:h-8')); ?>
         </button>
-        <button type="button" class="swiper-btn-next absolute z-10 right-0 xl:-right-16 top-2 lg:top-1/2 -translate-y-1/2 w-8 h-8 xl:w-8 xl:h-8 flex items-center justify-center text-slate-300 hover:text-brand-blue transition-all duration-200">
-          <?php echo spc_icon(array('icon' => 'chevron-right', 'group' => 'utilities', 'size' => '96', 'class' => 'w-8 h-8')); ?>
+        <button type="button" class="swiper-btn-next absolute z-10 right-0 xl:-right-16 top-1/2 -translate-y-1/2 -mt-[24px] md:-mt-0 w-4 h-4 md:w-8 md:h-8 flex items-center justify-center text-slate-300 hover:text-brand-blue transition-all duration-200">
+          <?php echo spc_icon(array('icon' => 'chevron-right', 'group' => 'utilities', 'size' => '96', 'class' => 'w-4 h-4 md:w-8 md:h-8')); ?>
         </button>
       </div>
     </div>
