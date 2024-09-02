@@ -67,3 +67,12 @@ xl:grid-cols-2
 xl:grid-cols-3
 xl:grid-cols-4
 xl:grid-cols-5
+object-bottom
+object-center
+object-left
+object-left-bottom
+object-left-top
+object-right
+object-right-bottom
+object-right-top
+object-top

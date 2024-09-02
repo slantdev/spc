@@ -3211,6 +3211,10 @@
   height: 1rem;
 }
 
+#poststuff .acf-layout .h-\[85vh\] {
+  height: 85vh;
+}
+
 #poststuff .acf-layout .max-h-full {
   max-height: 100%;
 }
@@ -3762,6 +3766,46 @@
 #poststuff .acf-layout .object-center {
   -o-object-position: center;
      object-position: center;
+}
+
+#poststuff .acf-layout .object-bottom {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+#poststuff .acf-layout .object-left {
+  -o-object-position: left;
+     object-position: left;
+}
+
+#poststuff .acf-layout .object-left-bottom {
+  -o-object-position: left bottom;
+     object-position: left bottom;
+}
+
+#poststuff .acf-layout .object-left-top {
+  -o-object-position: left top;
+     object-position: left top;
+}
+
+#poststuff .acf-layout .object-right {
+  -o-object-position: right;
+     object-position: right;
+}
+
+#poststuff .acf-layout .object-right-bottom {
+  -o-object-position: right bottom;
+     object-position: right bottom;
+}
+
+#poststuff .acf-layout .object-right-top {
+  -o-object-position: right top;
+     object-position: right top;
+}
+
+#poststuff .acf-layout .object-top {
+  -o-object-position: top;
+     object-position: top;
 }
 
 #poststuff .acf-layout .\!p-0 {

@@ -3543,6 +3543,9 @@ details.collapse summary::-webkit-details-marker {
 .h-4 {
   height: 1rem;
 }
+.h-\[85vh\] {
+  height: 85vh;
+}
 .max-h-full {
   max-height: 100%;
 }
@@ -3963,6 +3966,38 @@ details.collapse summary::-webkit-details-marker {
 .object-center {
   -o-object-position: center;
      object-position: center;
+}
+.object-bottom {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.object-left {
+  -o-object-position: left;
+     object-position: left;
+}
+.object-left-bottom {
+  -o-object-position: left bottom;
+     object-position: left bottom;
+}
+.object-left-top {
+  -o-object-position: left top;
+     object-position: left top;
+}
+.object-right {
+  -o-object-position: right;
+     object-position: right;
+}
+.object-right-bottom {
+  -o-object-position: right bottom;
+     object-position: right bottom;
+}
+.object-right-top {
+  -o-object-position: right top;
+     object-position: right top;
+}
+.object-top {
+  -o-object-position: top;
+     object-position: top;
 }
 .\!p-0 {
   padding: 0px !important;
