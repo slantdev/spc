@@ -67,7 +67,7 @@ if ($stats_repeater) { ?>
         $title = $stats['title'] ?? '';
       ?>
         <div class="text-center">
-          <div class="text-5xl md:text-6xl font-bold" style="<?php echo $number_style ?>"><span class="counterNumber"><?php echo number_format($stats_number) ?></span></div>
+          <div class="text-5xl md:text-6xl font-bold" style="<?php echo $number_style ?>"><span class="counterNumber"><?php echo $stats_number ?></span></div>
           <div class="uppercase font-semibold text-base md:text-lg" style="<?php echo $title_style ?>"><?php echo $title ?></div>
         </div>
       <?php endforeach ?>

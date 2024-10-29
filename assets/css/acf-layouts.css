@@ -2894,8 +2894,16 @@
   right: 1rem;
 }
 
+#poststuff .acf-layout .right-8 {
+  right: 2rem;
+}
+
 #poststuff .acf-layout .top-0 {
   top: 0px;
+}
+
+#poststuff .acf-layout .top-1\/2 {
+  top: 50%;
 }
 
 #poststuff .acf-layout .top-2 {
@@ -2908,18 +2916,6 @@
 
 #poststuff .acf-layout .top-auto {
   top: auto;
-}
-
-#poststuff .acf-layout .top-1\/2 {
-  top: 50%;
-}
-
-#poststuff .acf-layout .right-8 {
-  right: 2rem;
-}
-
-#poststuff .acf-layout .-top-\[48px\] {
-  top: -48px;
 }
 
 #poststuff .acf-layout .\!z-20 {
@@ -2986,6 +2982,10 @@
 
 #poststuff .acf-layout .\!ml-0 {
   margin-left: 0px !important;
+}
+
+#poststuff .acf-layout .-mt-\[24px\] {
+  margin-top: -24px;
 }
 
 #poststuff .acf-layout .mb-0 {
@@ -3084,14 +3084,6 @@
   margin-top: auto;
 }
 
-#poststuff .acf-layout .-mt-\[48px\] {
-  margin-top: -48px;
-}
-
-#poststuff .acf-layout .-mt-\[24px\] {
-  margin-top: -24px;
-}
-
 #poststuff .acf-layout .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -3143,10 +3135,6 @@
   height: 2.5rem;
 }
 
-#poststuff .acf-layout .h-14 {
-  height: 3.5rem;
-}
-
 #poststuff .acf-layout .h-20 {
   height: 5rem;
 }
@@ -3161,6 +3149,10 @@
 
 #poststuff .acf-layout .h-3 {
   height: 0.75rem;
+}
+
+#poststuff .acf-layout .h-4 {
+  height: 1rem;
 }
 
 #poststuff .acf-layout .h-5 {
@@ -3187,6 +3179,10 @@
   height: 70px;
 }
 
+#poststuff .acf-layout .h-\[85vh\] {
+  height: 85vh;
+}
+
 #poststuff .acf-layout .h-auto {
   height: auto;
 }
@@ -3195,32 +3191,8 @@
   height: 100%;
 }
 
-#poststuff .acf-layout .h-screen {
-  height: 100vh;
-}
-
-#poststuff .acf-layout .h-\[80vh\] {
-  height: 80vh;
-}
-
-#poststuff .acf-layout .h-\[75vh\] {
-  height: 75vh;
-}
-
-#poststuff .acf-layout .h-4 {
-  height: 1rem;
-}
-
-#poststuff .acf-layout .h-\[85vh\] {
-  height: 85vh;
-}
-
 #poststuff .acf-layout .max-h-full {
   max-height: 100%;
-}
-
-#poststuff .acf-layout .min-h-\[620px\] {
-  min-height: 620px;
 }
 
 #poststuff .acf-layout .min-h-screen {
@@ -3279,8 +3251,8 @@
   width: 0.75rem;
 }
 
-#poststuff .acf-layout .w-40 {
-  width: 10rem;
+#poststuff .acf-layout .w-4 {
+  width: 1rem;
 }
 
 #poststuff .acf-layout .w-48 {
@@ -3293,6 +3265,10 @@
 
 #poststuff .acf-layout .w-6 {
   width: 1.5rem;
+}
+
+#poststuff .acf-layout .w-64 {
+  width: 16rem;
 }
 
 #poststuff .acf-layout .w-8 {
@@ -3317,14 +3293,6 @@
 
 #poststuff .acf-layout .w-px {
   width: 1px;
-}
-
-#poststuff .acf-layout .w-64 {
-  width: 16rem;
-}
-
-#poststuff .acf-layout .w-4 {
-  width: 1rem;
 }
 
 #poststuff .acf-layout .max-w-4xl {
@@ -3410,11 +3378,6 @@
 
 #poststuff .acf-layout .translate-y-1\/4 {
   --tw-translate-y: 25%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-#poststuff .acf-layout .-translate-y-\[48px\] {
-  --tw-translate-y: -48px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -3514,15 +3477,6 @@
 
 #poststuff .acf-layout .gap-8 {
   gap: 2rem;
-}
-
-#poststuff .acf-layout .gap-6 {
-  gap: 1.5rem;
-}
-
-#poststuff .acf-layout .gap-x-20 {
-  -moz-column-gap: 5rem;
-       column-gap: 5rem;
 }
 
 #poststuff .acf-layout .gap-x-4 {
@@ -3763,14 +3717,14 @@
      object-fit: cover;
 }
 
-#poststuff .acf-layout .object-center {
-  -o-object-position: center;
-     object-position: center;
-}
-
 #poststuff .acf-layout .object-bottom {
   -o-object-position: bottom;
      object-position: bottom;
+}
+
+#poststuff .acf-layout .object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 #poststuff .acf-layout .object-left {
@@ -3861,6 +3815,11 @@
   padding-bottom: 0.75rem !important;
 }
 
+#poststuff .acf-layout .px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 #poststuff .acf-layout .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -3944,11 +3903,6 @@
 #poststuff .acf-layout .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-#poststuff .acf-layout .px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 #poststuff .acf-layout .\!pb-2 {
@@ -4970,20 +4924,20 @@
 
 @media (min-width: 768px) {
 
-  #poststuff .acf-layout .md\:top-1\/2 {
-    top: 50%;
-  }
-
   #poststuff .acf-layout .md\:left-0 {
     left: 0px;
+  }
+
+  #poststuff .acf-layout .md\:right-0 {
+    right: 0px;
   }
 
   #poststuff .acf-layout .md\:right-auto {
     right: auto;
   }
 
-  #poststuff .acf-layout .md\:right-0 {
-    right: 0px;
+  #poststuff .acf-layout .md\:top-1\/2 {
+    top: 50%;
   }
 
   #poststuff .acf-layout .md\:col-span-3 {
@@ -5089,19 +5043,14 @@
     border-radius: 1rem;
   }
 
-  #poststuff .acf-layout .md\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  #poststuff .acf-layout .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   #poststuff .acf-layout .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  #poststuff .acf-layout .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   #poststuff .acf-layout .md\:pt-4 {
@@ -5285,6 +5234,11 @@
     padding: 2rem;
   }
 
+  #poststuff .acf-layout .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   #poststuff .acf-layout .lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -5298,11 +5252,6 @@
   #poststuff .acf-layout .lg\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  #poststuff .acf-layout .lg\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
 
   #poststuff .acf-layout .lg\:pb-12 {
@@ -5361,16 +5310,16 @@
     padding-top: 9rem;
   }
 
+  #poststuff .acf-layout .lg\:pt-4 {
+    padding-top: 1rem;
+  }
+
   #poststuff .acf-layout .lg\:pt-6 {
     padding-top: 1.5rem;
   }
 
   #poststuff .acf-layout .lg\:pt-8 {
     padding-top: 2rem;
-  }
-
-  #poststuff .acf-layout .lg\:pt-4 {
-    padding-top: 1rem;
   }
 
   #poststuff .acf-layout .lg\:text-2xl {
@@ -5427,40 +5376,16 @@
     left: -8rem;
   }
 
+  #poststuff .acf-layout .xl\:-left-6 {
+    left: -1.5rem;
+  }
+
   #poststuff .acf-layout .xl\:-right-16 {
     right: -4rem;
   }
 
   #poststuff .acf-layout .xl\:-right-32 {
     right: -8rem;
-  }
-
-  #poststuff .acf-layout .xl\:-left-24 {
-    left: -6rem;
-  }
-
-  #poststuff .acf-layout .xl\:-right-24 {
-    right: -6rem;
-  }
-
-  #poststuff .acf-layout .xl\:-left-12 {
-    left: -3rem;
-  }
-
-  #poststuff .acf-layout .xl\:-right-12 {
-    right: -3rem;
-  }
-
-  #poststuff .acf-layout .xl\:-left-8 {
-    left: -2rem;
-  }
-
-  #poststuff .acf-layout .xl\:-right-8 {
-    right: -2rem;
-  }
-
-  #poststuff .acf-layout .xl\:-left-6 {
-    left: -1.5rem;
   }
 
   #poststuff .acf-layout .xl\:-right-6 {
@@ -5496,6 +5421,10 @@
     display: none;
   }
 
+  #poststuff .acf-layout .xl\:\!h-14 {
+    height: 3.5rem !important;
+  }
+
   #poststuff .acf-layout .xl\:\!h-16 {
     height: 4rem !important;
   }
@@ -5510,10 +5439,6 @@
 
   #poststuff .acf-layout .xl\:h-full {
     height: 100%;
-  }
-
-  #poststuff .acf-layout .xl\:\!h-14 {
-    height: 3.5rem !important;
   }
 
   #poststuff .acf-layout .xl\:\!w-auto {
@@ -5653,6 +5578,11 @@
     padding: 1.5rem;
   }
 
+  #poststuff .acf-layout .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   #poststuff .acf-layout .xl\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -5681,11 +5611,6 @@
   #poststuff .acf-layout .xl\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  #poststuff .acf-layout .xl\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   #poststuff .acf-layout .xl\:pb-12 {
@@ -5748,12 +5673,12 @@
     padding-top: 10rem;
   }
 
-  #poststuff .acf-layout .xl\:pt-8 {
-    padding-top: 2rem;
-  }
-
   #poststuff .acf-layout .xl\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  #poststuff .acf-layout .xl\:pt-8 {
+    padding-top: 2rem;
   }
 
   #poststuff .acf-layout .xl\:text-2xl {
@@ -5845,14 +5770,6 @@
 
 @media (min-width: 1380px) {
 
-  #poststuff .acf-layout .\32xl\:-left-32 {
-    left: -8rem;
-  }
-
-  #poststuff .acf-layout .\32xl\:-right-32 {
-    right: -8rem;
-  }
-
   #poststuff .acf-layout .\32xl\:h-6 {
     height: 1.5rem;
   }
@@ -5870,26 +5787,9 @@
     padding-top: 0.75rem !important;
     padding-bottom: 0.75rem !important;
   }
-
-  #poststuff .acf-layout .\32xl\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
 }
 
 @media (min-width: 1440px) {
-
-  #poststuff .acf-layout .\33xl\:-left-32 {
-    left: -8rem;
-  }
-
-  #poststuff .acf-layout .\33xl\:-right-32 {
-    right: -8rem;
-  }
-
-  #poststuff .acf-layout .\33xl\:-right-24 {
-    right: -6rem;
-  }
 
   #poststuff .acf-layout .\33xl\:\!h-16 {
     height: 4rem !important;
@@ -5897,16 +5797,6 @@
 
   #poststuff .acf-layout .\33xl\:w-64 {
     width: 16rem;
-  }
-
-  #poststuff .acf-layout .\33xl\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  #poststuff .acf-layout .\33xl\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
 }
 

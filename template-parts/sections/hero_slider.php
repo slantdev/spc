@@ -70,7 +70,7 @@ $hero_slider_repeater = $hero_slider['hero_slider'] ?? '';
             <div class="relative z-10 h-[85vh] lg:h-auto lg:min-h-[620px] flex flex-col justify-end lg:justify-center">
               <div class="relative z-10 container max-w-screen-2xl">
                 <div class="flex flex-col xl:flex-row xl:gap-x-20 pt-24 pb-12 xl:py-16 md:px-4 lg:px-12 xl:px-0 xl:items-end">
-                  <div class="hero-title-container w-full md:w-2/3 lg:w-1/2 xl:w-1/2">
+                  <div class="hero-title-container w-full md:w-2/3 lg:w-1/2 xl:w-2/5">
                     <?php
                     if ($pre_headline_text) {
                       get_template_part('template-parts/components/heading', '', array('field' => $pre_headline, 'align' => 'text-left', 'size' => 'text-lg xl:text-lg mb-4 xl:mb-4', 'weight' => 'font-bold', 'leading' => 'leading-[1.1em] xl:leading-[1.1em]', 'class' => 'hero-pre-heading'));
