@@ -50,7 +50,7 @@ $countries_links = $top_navigation['countries_links'] ?? '';
               }
               $country_link = $link['country_link'] ?? '';
             ?>
-              <li><a href="<?php echo $country_link ?>" class="flex items-center gap-3 pl-2 pr-4"><span class="inline-block flex-none"><img src="<?php echo $country_icon ?>" alt="" class="w-7 h-7 border-white border rounded-full"></span><span class="inline-block font-semibold"><?php echo $country_label ?></span></a></li>
+              <li><a href="<?php echo $country_link ?>" target="_blank" class="flex items-center gap-3 pl-2 pr-4"><span class="inline-block flex-none"><img src="<?php echo $country_icon ?>" alt="" class="w-7 h-7 border-white border rounded-full"></span><span class="inline-block font-semibold"><?php echo $country_label ?></span></a></li>
             <?php endforeach ?>
           </ul>
         </div>
