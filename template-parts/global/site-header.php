@@ -2,12 +2,11 @@
 $top_navigation = get_field('top_navigation', 'option')['top_navigation'] ?? '';
 $top_links = $top_navigation['top_links'] ?? '';
 // $social_links = $top_navigation['social_links'] ?? '';
-// $sign_in_register = $top_navigation['sign_in_register'] ?? '';
-// $donate_button = $top_navigation['donate_button'] ?? '';
+$countries_links = $top_navigation['countries_links'] ?? '';
 ?>
 <div class="top-header hidden xl:block relative z-50 bg-brand-dark-blue py-3 print:hidden">
   <div class="container max-w-screen-2xl">
-    <div class="flex items-center justify-end">
+    <div class="flex items-center justify-end gap-x-4">
       <?php if ($top_links) : ?>
         <ul class="top-nav flex gap-x-6 text-sm 4xl:text-base leading-tight">
           <?php
@@ -22,6 +21,41 @@ $top_links = $top_navigation['top_links'] ?? '';
           <?php endforeach ?>
         </ul>
       <?php endif; ?>
+
+      <?php if ($countries_links) : ?>
+        <div class="dropdown dropdown-bottom dropdown-end">
+          <?php
+          $first_country = $countries_links[0];
+          $first_country_flag = $first_country['country_flag'];
+          if ($first_country_flag == 'australia') {
+            $first_country_icon = get_stylesheet_directory_uri() . '/assets/images/icon/au-icon.png';
+            $first_country_label = 'AU';
+          } else {
+            $first_country_icon = get_stylesheet_directory_uri() . '/assets/images/icon/nz-icon.png';
+            $first_country_label = 'NZ';
+          }
+          $first_country_link = $first_country['country_link'] ?? '';
+          ?>
+          <div tabindex="0" role="button" class="m-1 flex items-center gap-3"><span class="inline-block"><img src="<?php echo $first_country_icon ?>" alt="" class="w-7 h-7 border-white border rounded-full"></span><span class="inline-block text-white font-semibold"><?php echo $first_country_label ?></span><?php echo spc_icon(array('icon' => 'chevron-down', 'group' => 'utilities', 'size' => '16', 'class' => 'text-white w-3 h-3')); ?></div>
+          <ul tabindex="0" class="dropdown-content !top-0 menu bg-base-100 rounded-box z-[1] w-auto p-2 shadow">
+            <?php
+            foreach ($countries_links as $link) :
+              $country_flag = $link['country_flag'] ?? '';
+              if ($country_flag == 'australia') {
+                $country_icon = get_stylesheet_directory_uri() . '/assets/images/icon/au-icon.png';
+                $country_label = 'AU';
+              } else {
+                $country_icon = get_stylesheet_directory_uri() . '/assets/images/icon/nz-icon.png';
+                $country_label = 'NZ';
+              }
+              $country_link = $link['country_link'] ?? '';
+            ?>
+              <li><a href="<?php echo $country_link ?>" class="flex items-center gap-3 pl-2 pr-4"><span class="inline-block flex-none"><img src="<?php echo $country_icon ?>" alt="" class="w-7 h-7 border-white border rounded-full"></span><span class="inline-block font-semibold"><?php echo $country_label ?></span></a></li>
+            <?php endforeach ?>
+          </ul>
+        </div>
+      <?php endif; ?>
+
     </div>
   </div>
 </div>
@@ -31,7 +65,7 @@ $header_logo = get_field('header_logo', 'option');
 $site_logo = $header_logo['site_logo']['url'] ?? get_stylesheet_directory_uri() . '/assets/images/logo/logo-spotlight-careers.png';
 //preint_r($header_logo);
 ?>
-<header class="fixed z-50 w-full top-0 left-0 xl:static print:hidden">
+<header class="fixed z-40 w-full top-0 left-0 xl:static print:hidden">
   <div class="main-header bg-brand-medium-blue ">
     <div class="container max-w-screen-2xl">
       <div class="relative xl:flex xl:justify-between">

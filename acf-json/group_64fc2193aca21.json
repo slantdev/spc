@@ -76,7 +76,7 @@
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
-                        "class": "",
+                        "class": "field-hidden",
                         "id": ""
                     },
                     "acfe_repeater_stylised_button": 1,
@@ -141,11 +141,11 @@
                     ]
                 },
                 {
-                    "key": "field_6614215f4e0a0",
-                    "label": "Sign In \/ Register",
-                    "name": "sign_in_register",
+                    "key": "field_67218af2bec7b",
+                    "label": "Countries Links",
+                    "name": "countries_links",
                     "aria-label": "",
-                    "type": "link",
+                    "type": "repeater",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -154,23 +154,63 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array"
-                },
-                {
-                    "key": "field_666fe1350d536",
-                    "label": "Donate Button",
-                    "name": "donate_button",
-                    "aria-label": "",
-                    "type": "link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array"
+                    "acfe_repeater_stylised_button": 1,
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Link",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_67218af2bec7c",
+                            "label": "Flag",
+                            "name": "country_flag",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "australia": "Australia",
+                                "newzealand": "New Zealand"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "parent_repeater": "field_67218af2bec7b"
+                        },
+                        {
+                            "key": "field_67218af2bec7d",
+                            "label": "Link",
+                            "name": "country_link",
+                            "aria-label": "",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "parent_repeater": "field_67218af2bec7b"
+                        }
+                    ]
                 }
             ]
         }
@@ -200,7 +240,7 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1721720273,
+    "modified": 1730251586,
     "acfe_categories": {
         "site-settings": "Site Settings"
     }
