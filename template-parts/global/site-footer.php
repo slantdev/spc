@@ -201,7 +201,16 @@ if ($subscribe && !$disable_subscribe) :
           <?php if ($social_media_links) : ?>
             <div class="mb-8">
               <h4 class="text-lg font-bold mb-6"><?php echo $social_media_heading; ?></h4>
-              <div>Social Icons</div>
+              <ul class="social-link flex gap-x-2">
+                <?php
+                foreach ($social_media_links as $link) :
+                  $social_media_link = $link['social_media_link']['url'] ?? '';
+                  $social_media_icon = $link['social_media_icon'] ?? '';
+                ?>
+                  <li><a href="<?php echo $social_media_link ?>" target="_blank" class="text-white font-medium hover:opacity-75"><?php echo spc_icon(array('icon' => $social_media_icon, 'group' => 'social', 'size' => '28', 'class' => 'w-7 h-7 text-white')); ?></a></li>
+                <?php endforeach ?>
+              </ul>
+
             </div>
           <?php endif ?>
           <?php if ($footer_address) : ?>

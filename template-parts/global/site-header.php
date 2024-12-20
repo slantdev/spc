@@ -61,8 +61,10 @@ $countries_links = $top_navigation['countries_links'] ?? '';
 </div>
 
 <?php
-$header_logo = get_field('header_logo', 'option');
+$header_logo = get_field('header_logo', 'option')['header_logo'];
 $site_logo = $header_logo['site_logo']['url'] ?? get_stylesheet_directory_uri() . '/assets/images/logo/logo-spotlight-careers.png';
+$logo_link = $header_logo['logo_link']['url'] ?? site_url();
+$show_search = get_field('show_search', 'option');
 //preint_r($header_logo);
 ?>
 <header class="fixed z-40 w-full top-0 left-0 xl:static print:hidden">
@@ -71,7 +73,7 @@ $site_logo = $header_logo['site_logo']['url'] ?? get_stylesheet_directory_uri() 
       <div class="relative xl:flex xl:justify-between">
         <div class="flex justify-between items-center xl:justify-normal">
           <div class="site-logo py-4 xl:py-6">
-            <a href="<?php echo site_url() ?>"><img src="<?php echo $site_logo ?>" alt="<?php echo get_bloginfo('name'); ?>" class="w-64 h-auto xl:!h-16 3xl:!h-16 xl:!w-auto"></a>
+            <a href="<?php echo $logo_link ?>"><img src="<?php echo $site_logo ?>" alt="<?php echo get_bloginfo('name'); ?>" class="w-64 h-auto xl:!h-16 3xl:!h-16 xl:!w-auto"></a>
           </div>
           <button type="button" aria-label="Toggle navigation" id="primary-menu-toggle" class="menu-open-btn xl:hidden">
             <svg viewBox="0 0 20 20" class="inline-block w-5 h-5 text-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -83,20 +85,22 @@ $site_logo = $header_logo['site_logo']['url'] ?? get_stylesheet_directory_uri() 
             </svg>
           </button>
         </div>
-        <div class="hidden xl:flex items-start xl:justify-end py-3 xl:py-6">
-          <div id="search-form-container">
-            <div class="py-4 flex items-center w-full h-full">
-              <div class="flex w-full gap-x-4 items-center">
-                <form id="header-searchform" class="relative grow" method="get" action="<?php echo esc_url(home_url('/')); ?>">
-                  <input id="header-searchform-input" type="text" class="w-full border-gray-300 shadow-inner !rounded-full bg-white !px-6 !py-2.5 2xl:!py-3 focus:border-brand-light-blue focus:ring-brand-light-blue" name="s" placeholder="Search" value="">
-                  <button type="submit" class="absolute right-4 top-3">
-                    <?php echo spc_icon(array('icon' => 'search', 'group' => 'utilities', 'size' => '24', 'class' => 'w-5 h-5 2xl:w-6 2xl:h-6')); ?>
-                  </button>
-                </form>
+        <?php if ($show_search) : ?>
+          <div class="hidden xl:flex items-start xl:justify-end py-3 xl:py-6">
+            <div id="search-form-container">
+              <div class="py-4 flex items-center w-full h-full">
+                <div class="flex w-full gap-x-4 items-center">
+                  <form id="header-searchform" class="relative grow" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+                    <input id="header-searchform-input" type="text" class="w-full border-gray-300 shadow-inner !rounded-full bg-white !px-6 !py-2.5 2xl:!py-3 focus:border-brand-light-blue focus:ring-brand-light-blue" name="s" placeholder="Search" value="">
+                    <button type="submit" class="absolute right-4 top-3">
+                      <?php echo spc_icon(array('icon' => 'search', 'group' => 'utilities', 'size' => '24', 'class' => 'w-5 h-5 2xl:w-6 2xl:h-6')); ?>
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        <?php endif; ?>
       </div>
     </div>
   </div>
