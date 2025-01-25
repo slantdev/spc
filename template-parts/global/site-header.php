@@ -1,10 +1,34 @@
 <?php
+
+$header_style = get_field('header_style', 'option');
+$header_top = $header_style['header_top'] ?? '';
+$header_top_bg_color = $header_top['background_color'] ?? '';
+$header_top_text_color = $header_top['text_color'] ?? '';
+$header_top_style = '';
+if ($header_top_bg_color) {
+  $header_top_style .= 'background-color: ' . $header_top_bg_color . ';';
+}
+if ($header_top_text_color) {
+  $header_top_style .= 'color: ' . $header_top_text_color . ';';
+}
+
+$header_bottom = $header_style['header_bottom'] ?? '';
+$header_bottom_bg_color = $header_bottom['background_color'] ?? '';
+$header_bottom_text_color = $header_bottom['text_color'] ?? '';
+$header_bottom_style = '';
+if ($header_bottom_bg_color) {
+  $header_bottom_style .= 'background-color: ' . $header_bottom_bg_color . ';';
+}
+if ($header_bottom_text_color) {
+  $header_bottom_style .= 'color: ' . $header_bottom_text_color . ';';
+}
+
 $top_navigation = get_field('top_navigation', 'option')['top_navigation'] ?? '';
 $top_links = $top_navigation['top_links'] ?? '';
 // $social_links = $top_navigation['social_links'] ?? '';
 $countries_links = $top_navigation['countries_links'] ?? '';
 ?>
-<div class="top-header hidden xl:block relative z-50 bg-brand-dark-blue py-3 print:hidden">
+<div class="top-header hidden xl:block relative z-50 bg-brand-dark-blue py-3 print:hidden" style="<?php echo $header_top_style ?>">
   <div class="container max-w-screen-2xl">
     <div class="flex items-center justify-end gap-x-4">
       <?php if ($top_links) : ?>
@@ -68,7 +92,7 @@ $show_search = get_field('show_search', 'option');
 //preint_r($header_logo);
 ?>
 <header class="fixed z-40 w-full top-0 left-0 xl:static print:hidden">
-  <div class="main-header bg-brand-medium-blue ">
+  <div class="main-header bg-brand-medium-blue" style="<?php echo $header_bottom_style ?>">
     <div class="container max-w-screen-2xl">
       <div class="relative xl:flex xl:justify-between">
         <div class="flex justify-between items-center xl:justify-normal">
