@@ -14,13 +14,13 @@ $more_settings = $accordion_comp['settings']['more_settings'] ?? [];
 $uniqid = uniqid();
 $accordion_id = 'accordion-' . $uniqid;
 
-$primary_color = get_field('primary_color', 'option');
-if ($primary_color) {
-  echo '<style>';
-  echo '.collapse-title { color: ' . $primary_color . '; }';
-  echo '.collapse-title:after { color: ' . $primary_color . '; }';
-  echo '</style>';
-}
+// $primary_color = get_field('primary_color', 'option');
+// if ($primary_color) {
+//   echo '<style>';
+//   echo '.collapse-title { color: ' . $primary_color . '; }';
+//   echo '.collapse-title:after { color: ' . $primary_color . '; }';
+//   echo '</style>';
+// }
 
 // Outputting accordion if repeater exists
 if ($accordion_repeater) { ?>
@@ -32,7 +32,7 @@ if ($accordion_repeater) { ?>
     ?>
       <div class="collapse collapse-plus bg-brand-light-gray rounded-md mb-6">
         <input type="checkbox" class="accordion-btn w-full h-full block" name="<?php echo $accordion_id ?>" />
-        <div class="collapse-title bg-[#E2E2E2] text-brand-light-blue text-lg lg:text-2xl text-left border-t-0 border-x-0 font-medium py-3 pl-4 pr-8 lg:py-5 lg:pl-8 lg:pr-12 after:font-thin after:!end-8 after:text-brand-light-blue after:!top-2 after:text-3xl after:lg:text-5xl">
+        <div class="collapse-title bg-[#E2E2E2] text-black text-lg lg:text-2xl text-left border-t-0 border-x-0 font-medium py-3 pl-4 pr-8 lg:py-5 lg:pl-8 lg:pr-12 after:font-thin after:!end-8 after:text-black after:!top-2 after:text-3xl after:lg:text-5xl">
           <?php echo $title ?>
         </div>
         <div class="collapse-content p-0">
