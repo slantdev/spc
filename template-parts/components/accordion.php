@@ -14,6 +14,14 @@ $more_settings = $accordion_comp['settings']['more_settings'] ?? [];
 $uniqid = uniqid();
 $accordion_id = 'accordion-' . $uniqid;
 
+$primary_color = get_field('primary_color', 'option');
+if ($primary_color) {
+  echo '<style>';
+  echo '.collapse-title { color: ' . $primary_color . '; }';
+  echo '.collapse-title:after { color: ' . $primary_color . '; }';
+  echo '</style>';
+}
+
 // Outputting accordion if repeater exists
 if ($accordion_repeater) { ?>
   <div id="<?php echo $accordion_id ?>" class="relative pb-20">
