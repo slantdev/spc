@@ -7,6 +7,7 @@ $primary_color = get_field('primary_color', 'option');
 if ($primary_color) {
   echo '<style>';
   echo '.main-nav--ul > li > a:hover { color: ' . $primary_color . '; }';
+  echo '.dropdown-menu li > a:hover { color: ' . $primary_color . '; }';
   echo '</style>';
 }
 ?>
