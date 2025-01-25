@@ -2,6 +2,13 @@
 $current_post_id = get_queried_object_id();
 $post_ancestors = get_post_ancestors($current_post_id);
 $menu_items = get_field('menu_items', 'option');
+
+$primary_color = get_field('primary_color', 'option');
+if ($primary_color) {
+  echo '<style>';
+  echo '.main-nav--ul > li > a:hover { color: ' . $primary_color . '; }';
+  echo '</style>';
+}
 ?>
 
 <div class="bg-white">
